@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+ font-family: 'Space Grotesk', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+#viewport {
+ overflow: hidden !important;
+ position: fixed;
+ height: 100%;
+ width: 100vw;
+ top: 0;
+ left: 0;
+ z-index: 10;
+}
+
+.rotating-text {
+ position: absolute;
+ bottom: 10px;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: -1;
+}
+
