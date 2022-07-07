@@ -56,33 +56,33 @@ function animationInit() {
   x: '-50',
   opacity: 0,
  }, {
-  duration: .25,
+  duration: .2,
   opacity: 1,
   x: 0,
   ease: "power1.inOut",
   stagger: {
-   each: .2,
+   each: .15,
    onComplete: function () {
     gsap.to(this.targets()[0], {
      opacity: 0,
      x: '60',
-     duration: 0.3,
+     duration: 0.22,
      ease: Power3.easeInOut
     })
    }
   },
   onComplete: function () {
    gsap.to(".loading", 1, {
-    x: '100',
-    opacity: 0,
+    x: '100vw',
+    // opacity: 0,
     ease: Power3.easeInOut,
-    onCompleteAll: (function () {
+    onComplete: (function () {
      select('.loading').remove()
      gsap.to('#viewport', {
       opacity: 1
      })
     })
-   }, 1.2)
+   }, 1.5)
   }
  }, 2);
 }
@@ -104,22 +104,10 @@ function moveMouse(e) {
 function createCursorHover(e) {
 
  if (e.type === 'mouseenter') {
-  // circle.classList.remove('mouse-follow')
   circle.classList.add('mouse-interaction')
-
-  TweenLite.to(select('#mouse p'), 0.6, {
-   css: {
-    visibility: "visible",
-   }
-  });
  }
  else if (e.type === 'mouseleave') {
   circle.classList.remove('mouse-interaction')
-  TweenLite.to(select('#mouse p'), 0.5, {
-   css: {
-    visibility: "hidden",
-   }
-  });
  }
 }
 
