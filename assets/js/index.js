@@ -41,7 +41,7 @@ function animationInit() {
  TweenMax.staggerTo(".kamusta", 0.8, {
   x: '40',
   opacity: 0,
-  delay: 1.4,
+  delay: 1.45,
   ease: Power3.easeInOut,
  }, 1.5)
 
