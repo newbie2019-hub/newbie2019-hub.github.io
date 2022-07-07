@@ -10,16 +10,17 @@ html,
 body {
     scroll-behavior: smooth;
     overflow: hidden;
+    height: 100%;
 }
 
 #viewport {
-    overflow: hidden !important;
+    overflow: hidden;
     position: fixed;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
 }
 
 .rotating-text {

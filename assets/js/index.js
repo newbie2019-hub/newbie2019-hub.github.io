@@ -5,10 +5,12 @@ gsap.registerPlugin(ScrollToPlugin);
 let bodyScrollBar;
 const circleType = new CircleType(document.getElementById('rotated'))
 const select = (e) => document.querySelector(e);
+
 const navLinks = gsap.utils.toArray('nav ul li a')
+const projectCards = gsap.utils.toArray('.cursor-grab')
 
 bodyScrollBar = Scrollbar.init(select('#viewport'), {
- damping: 0.1,
+ damping: 0.1, delegateTo: document
 });
 
 
@@ -23,6 +25,19 @@ bodyScrollBar.addListener((s) => {
  gsap.to('#stack-first', { x: (s.offset.y * 0.2) - 500 })
  gsap.to('#stack-second', { x: ((s.offset.y * 0.2) * -1) })
 })
+
+bodyScrollBar.setPosition(0, 0);
+bodyScrollBar.track.xAxis.element.remove();
+
+ScrollTrigger.scrollerProxy(document.body, {
+ scrollTop(value) {
+  if (arguments.length) {
+   bodyScrollBar.scrollTop = value; // setter
+  }
+  return bodyScrollBar.scrollTop;    // getter
+ }
+});
+
 
 
 function animationInit() {
@@ -85,6 +100,8 @@ function animationInit() {
    }, 1.5)
   }
  }, 2);
+
+
 }
 
 /**
@@ -135,9 +152,67 @@ document.addEventListener('DOMContentLoaded', function () {
   link.addEventListener('mouseleave', createCursorHover);
  });
 
+ projectCards.forEach(link => {
+  link.addEventListener('mouseenter', createCursorHover);
+  link.addEventListener('mouseleave', createCursorHover);
+ });
+
  document.addEventListener('mousemove', function (e) {
   moveMouse(e)
  })
+
 });
 
+gsap.utils.toArray('#heading').forEach((div, index) => {
+ gsap.from(div, {
+   x: -50,
+   opacity: 0,
+   scrollTrigger: {
+     trigger: div,
+     start: "top bottom",
+     end: "top center",
+     scrub: 1,
+   }
+ })
+});
+
+gsap.utils.toArray('#subheading').forEach((div, index) => {
+ gsap.from(div, {
+   x: -60,
+   opacity: 0,
+   scrollTrigger: {
+     trigger: div,
+     start: "top bottom",
+     end: "top center",
+     scrub: 1
+   }
+ }, .5)
+});
+
+gsap.from('.card-work', {
+ x: -20,
+ opacity: 0,
+ duration: 4,
+ ease: Power3.easeIn,
+ stagger: {
+  each: 1,
+ },
+ scrollTrigger: {
+  trigger: 'div.card-work',
+  start: 'top bottom',
+  end: 'bottom center',
+  scrub: 1,
+ }
+})
+
+/**
+ *  Hides the mouse
+ */
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+ circle.style.visibility = "hidden"
+ circle.style.opacity = 0
+}
+
+
+// initSmoothScrollbar()
 animationInit()

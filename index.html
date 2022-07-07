@@ -105,6 +105,7 @@
   </div>
 
   <!--- opacity-0 -->
+  <!-- <div id="viewport" class="opacity-0"> -->
   <div id="viewport" class="opacity-0">
     <section class="relative flex justify-center w-screen h-screen items-center container inset-x-0 mx-auto">
       <p class="text-center">Site Under Construction ...</p>
@@ -115,22 +116,23 @@
         </div>
       </div>
     </section>
+    
     <section id="scrollingwork" class="relative overflow-hidden mt-48 mb-32">
       <div class="w-full whitespace-nowrap">
         <p id="about-first"
-          class="text-7xl text-gray-700/50 tracking-wide font-medium -translate-x-1/4 dark:text-white/90">
+          class="text-7xl text-gray-700/50 tracking-wide font-medium -translate-x-1/4 dark:text-white/50">
           • TESTING • DEVELOPMENT • PROTOTYPE • DEVELOPMENT • IDEATE • DESIGN • PROTOTYPE • DEFINE • EMPATHY • TESTING •
           DEVELOPMENT
         </p>
-        <p id="about-second" class="text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/90">
+        <p id="about-second" class="text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/50">
           • EMPATHY • PROTOTYPE • EMPATHY • TESTING • DEVELOPMENT • IDEATE • DESIGN • DEFINE • • DEVELOPMENT
         </p>
       </div>
     </section>
 
-    <section class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto">
-      <p class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">HOW I WORK</p>
-      <p class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl dark:text-white">DEDICATING MY TIME IN CRAFTING A
+    <section id="work" class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto">
+      <p id="heading" class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">HOW I WORK</p>
+      <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl dark:text-white">DEDICATING MY TIME IN CRAFTING A
         CREATIVE PROCESS TO
         MAKE A USEFUL PRODUCT.
       </p>
@@ -221,14 +223,14 @@
     </section>
 
     <section class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto">
-      <p class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">SELECTED PROJECTS</p>
-      <p class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
+      <p id="heading" class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">SELECTED PROJECTS</p>
+      <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
         HERE ARE MY SELECTED SAMPLE PROJECTS DEVELOPED RECENTLY
       </p>
       <div class="splide mt-10" role="group" aria-label="Splide Carousel">
         <div class="splide__track">
           <ul class="splide__list gap-x-4">
-            <li class="splide__slide">
+            <li class="splide__slide cursor-grab">
               <div class="shadow-sm w-full h-[24rem] bg-gray-200 rounded-lg flex justify-center items-center">
                 Slide 1
               </div>
@@ -239,7 +241,7 @@
                   consequuntur temporibus dicta.</p>
               </div>
             </li>
-            <li class="splide__slide">
+            <li class="splide__slide cursor-grab">
               <div class="shadow-sm w-full h-[24rem] bg-gray-200 rounded-lg flex justify-center items-center">
                 Slide 2
               </div>
@@ -250,7 +252,7 @@
                   consequuntur temporibus dicta.</p>
               </div>
             </li>
-            <li class="splide__slide">
+            <li class="splide__slide cursor-grab">
               <div class="shadow-sm w-full h-[24rem] bg-gray-200 rounded-lg flex justify-center items-center">
                 Slide 3
               </div>
@@ -270,20 +272,20 @@
     <section class="relative overflow-hidden mt-48 mb-32">
       <div class="w-full whitespace-nowrap">
         <p id="stack-first"
-          class="text-7xl text-gray-700/50 tracking-wide -translate-x-1/2 font-medium dark:text-white/90">
+          class="text-7xl text-gray-700/50 tracking-wide -translate-x-1/2 font-medium dark:text-white/50">
           CSS • LARAVEL • LIVEWIRE • GSAP • GIT • TAILWIND • PHOTOSHOP
         </p>
-        <p id="stack-second" class="text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/90">
+        <p id="stack-second" class="text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/50">
           • SASS • EMPATHY • ADOBE XD • CORDOVA • JAVASCRIPT • DESIGN • GSAP •
         </p>
       </div>
     </section>
 
     <section class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto">
-      <p class="text-gray-500 font-bold  dark:text-gray-300 tracking-wider">
+      <p id="heading" class="text-gray-500 font-bold  dark:text-gray-300 tracking-wider">
         TOOLS AND TECH STACK
       </p>
-      <p class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
+      <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
         TOOLS AND TECHSTACK THAT I’VE BEEN USING FOR THE PROJECTS
       </p>
       <div class="relative flex flex-wrap gap-x-3 gap-y-8 mt-14">
@@ -342,12 +344,12 @@
       </div>
     </section>
 
-    <footer class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto items-center h-screen flex">
+    <footer class="px-6 relative mt-18 mb-6 container inset-x-0 mx-auto items-center h-screen flex">
       <div class="w-full">
-        <p class="text-gray-500 font-bold  dark:text-gray-300 tracking-wider">
+        <p id="heading" class="text-gray-500 font-bold  dark:text-gray-300 tracking-wider">
           GET IN TOUCH
         </p>
-        <p class="text-xl font-black mt-4 md:text-3xl md:max-w-2xl">
+        <p id="subheading" class="text-xl font-black mt-4 md:text-3xl md:max-w-2xl">
           GOT SOME IDEAS, PROJECTS OR JUST WANT TO SAY HELLO? GO AHEAD
         </p>
         <div class="flex">
