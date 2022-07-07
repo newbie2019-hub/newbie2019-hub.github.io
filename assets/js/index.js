@@ -1,17 +1,12 @@
-const circleType = new CircleType(document.getElementById('rotated'))
-
-document.addEventListener('DOMContentLoaded', function () {
- var splide = new Splide('.splide', {padding: '5rem',  pagination: 'false'});
- splide.mount();
-});
-
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollToPlugin);
 
 let bodyScrollBar;
-
+const circleType = new CircleType(document.getElementById('rotated'))
 const select = (e) => document.querySelector(e);
+const navLinks = gsap.utils.toArray('nav ul li a')
+
 bodyScrollBar = Scrollbar.init(select('#viewport'), {
  damping: 0.1,
 });
@@ -27,12 +22,10 @@ bodyScrollBar.addListener((s) => {
 
  gsap.to('#stack-first', { x: (s.offset.y * 0.2) - 500 })
  gsap.to('#stack-second', { x: ((s.offset.y * 0.2) * -1) })
-
 })
 
 
 function animationInit() {
-
  TweenMax.staggerTo(".loading", 0.5, {
   opacity: 1,
   ease: Power3.easeInOut,
@@ -63,17 +56,17 @@ function animationInit() {
   x: '-50',
   opacity: 0,
  }, {
-  duration: .3,
+  duration: .25,
   opacity: 1,
   x: 0,
   ease: "power1.inOut",
   stagger: {
-   each: .4,
+   each: .2,
    onComplete: function () {
     gsap.to(this.targets()[0], {
      opacity: 0,
      x: '60',
-     duration: 0.6,
+     duration: 0.3,
      ease: Power3.easeInOut
     })
    }
@@ -92,8 +85,71 @@ function animationInit() {
    }, 1.2)
   }
  }, 2);
-
-
 }
+
+/**
+ *  Follows mouse cursor
+ *  
+ */
+let circle = document.getElementById('mouse')
+
+function moveMouse(e) {
+ gsap.to(circle, 0.4, {
+  x: e.pageX - 30,
+  y: e.pageY - 30,
+ })
+}
+
+
+function createCursorHover(e) {
+
+ if (e.type === 'mouseenter') {
+  // circle.classList.remove('mouse-follow')
+  circle.classList.add('mouse-interaction')
+
+  TweenLite.to(select('#mouse p'), 0.6, {
+   css: {
+    visibility: "visible",
+   }
+  });
+ }
+ else if (e.type === 'mouseleave') {
+  circle.classList.remove('mouse-interaction')
+  TweenLite.to(select('#mouse p'), 0.5, {
+   css: {
+    visibility: "hidden",
+   }
+  });
+ }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+ var splide = new Splide('.splide', { padding: '5rem', pagination: 'false' });
+ splide.mount();
+
+ if (JSON.parse(localStorage.getItem('darkMode'))) {
+  document.documentElement.classList.add('dark')
+  document.getElementById('toggle').setAttribute('checked', true)
+ }
+
+ document.getElementById('toggle').addEventListener('change', function () {
+  if (this.checked) {
+   localStorage.setItem('darkMode', true)
+   document.documentElement.classList.add('dark')
+  } else {
+   localStorage.setItem('darkMode', false)
+   document.documentElement.classList.remove('dark')
+  }
+ })
+
+ navLinks.forEach(link => {
+  link.addEventListener('mouseenter', createCursorHover);
+  link.addEventListener('mouseleave', createCursorHover);
+ });
+
+ document.addEventListener('mousemove', function (e) {
+  moveMouse(e)
+ })
+});
 
 animationInit()
