@@ -777,6 +777,10 @@ video {
   width: 4rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
@@ -1367,6 +1371,14 @@ body {
     display: block;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:min-w-\[320px\] {
     min-width: 320px;
   }
@@ -1388,5 +1400,15 @@ body {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-2\/6 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-4\/6 {
+    width: 66.666667%;
   }
 }
