@@ -80,7 +80,7 @@ function animationInit() {
      select('.loading').remove()
      gsap.to('#viewport', {
       opacity: 1
-     })
+     }, 1)
     })
    }, 1.5)
   }
