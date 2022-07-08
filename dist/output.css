@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -745,6 +745,10 @@ video {
   height: 4rem;
 }
 
+.max-h-\[32rem\] {
+  max-height: 32rem;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -783,6 +787,10 @@ video {
 
 .min-w-\[240px\] {
   min-width: 240px;
+}
+
+.max-w-\[624px\] {
+  max-width: 624px;
 }
 
 .flex-1 {
@@ -1120,12 +1128,12 @@ video {
   line-height: 1.25rem;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-gray-700\/50 {

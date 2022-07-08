@@ -192,16 +192,51 @@ gsap.utils.toArray('#subheading').forEach((div, index) => {
 gsap.from('.card-work', {
   x: -20,
   opacity: 0,
-  duration: 4,
+  duration: 2,
   ease: Power3.easeInOut,
   scrollTrigger: {
     trigger: 'div.card-work',
     start: 'top bottom',
     end: 'top center',
-    scrub: 1,
   },
-  stagger: { amount: 4 }
+  stagger: { amount: .5 }
 })
+
+/**
+ *  Pin parent content of 
+ *  fake horizontal scrolling
+ *  
+ */
+gsap.to('#projects', {
+  scrollTrigger: {
+    trigger: "#projects",
+    start: 'top top',
+    pin: 'section #projects',
+    markers: true,
+    scrub: 1,
+    end: "+=1000",
+  }
+});
+
+let sections = gsap.utils.toArray(".panel");
+
+console.log(select('.horizontal-scrolling').scrollWidth)
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#projects",
+    start: 'center center',
+    pin: true,
+    pinReparent: true,
+    markers: true,
+    scrub: 1,
+    end: "+=1000",
+    anticipatePin: 1
+  }
+});
+
+
 
 
 
