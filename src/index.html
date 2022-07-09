@@ -11,8 +11,8 @@
   <meta name="author" content="Yvan Sabay">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link href="/dist/main.css" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
-  <link href="/dist/splide.min.css" rel="stylesheet">
 </head>
 
 <body id="" class="overflow-x-hidden dark:bg-neutral-900 dark:text-white bg-white">
@@ -48,9 +48,16 @@
     </ul>
   </nav>
 
+  <a id="to-top" href="#home"
+    class="w-16 h-16 transition transition-200 bg-gradient-to-t from-blue-800 to-blue-400 hover:from-blue-700 hover:to-blue-300 fixed bottom-6 right-10 rounded-full z-50 flex justify-center items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 pointer-events-none" fill="white" viewBox="0 0 24 24"
+      stroke="white" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+    </svg>
+  </a>
   <div id="mouse" class="mouse-follow media-blend cursor-effect">
   </div>
-<!--     
+  <!--     
   <div
     class="loading opacity-0 fixed inset-0 h-screen w-screen flex items-center justify-center dark:bg-neutral-900  bg-white z-20">
     <div class="kamusta absolute">
@@ -107,12 +114,49 @@
   <!--- opacity-0 -->
   <!-- <div id="viewport" class="opacity-0"> -->
   <div id="viewport" class="">
-    <section class="relative flex justify-center w-screen h-screen items-center container inset-x-0 mx-auto">
-      <p class="text-center uppercase tracking-wider">Site Under Construction ...</p>
+    <section id="home"
+      class="px-6 gap-y-6 md:px-10 relative flex flex-col md:flex-row justify-center w-screen min-h-screen items-center container inset-x-0 mx-auto">
+      <div class="w-full pt-32 md:w-1/2 md:pt-0">
+        <p class="md:text-2xl">
+          Hi! I am,
+        </p>
+        <p class="text-7xl md:text-8xl lg:text-9xl uppercase font-bold dark:text-white">Yvan Sabay</p>
+        <p class="text-sm md:text-md lg:text-md font-light md:max-w-lg">A Full Stack Web Developer and a UI-UX Designer.
+          I enjoy using my skill-set with people to accomplish their
+          goals and ideas. </p>
+      </div>
+      <div class="w-full md:w-1/2 flex items-center">
+        <div class="console">
+          <div class="console-toolbar">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-orange-500"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+          <div class="console-content">
+            <div id="terminal" class="" onclick="document.getElementById('dummyKeyboard').focus();">
+              <div class="terminal-output" id="terminalOutput">
+                <div class="terminal-line">
+                  <span class="help-msg">Hello! You can type <span class="help">help</span> to see a list of supported
+                    commands and <span class="help">clear</span> to reset the terminal.</span>
+
+                </div>
+              </div>
+              <div class="terminal-line">
+                <span class="success">➜</span>
+                <span class="directory">~</span>
+                <span class="user-input" id="userInput"></span>
+                <span class="line anim-typewriter"></span>
+                <input type="text" id="dummyKeyboard" class="dummy-keyboard" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="rotating-text" class="rotating-text">
         <div id="circular-text" class="circular-text relative">
-          <span id="rotated" class="text-sm font-medium dark:text-white/50">SCROLL DOWN • LEARN MORE • SCROLL DOWN
-            •</span>
+          <span id="rotated" class="text-xs font-medium dark:text-white/50 mix-blend-exclusion">&#8203 SCROLL DOWN - SCROLL DOWN - SCROLL
+            DOWN -</span>
         </div>
       </div>
     </section>
@@ -120,17 +164,18 @@
     <section id="scrollingwork" class="relative overflow-hidden mt-48 mb-32">
       <div class="w-full whitespace-nowrap">
         <p id="about-first"
-          class="text-7xl text-gray-700/50 tracking-wide font-medium -translate-x-1/4 dark:text-white/50">
+          class="text-4xl md:text-6xl lg:text-7xl text-gray-700/50 tracking-wide font-medium -translate-x-1/4 dark:text-white/50">
           • TESTING • DEVELOPMENT • PROTOTYPE • DEVELOPMENT • IDEATE • DESIGN • PROTOTYPE • DEFINE • EMPATHY • TESTING •
           DEVELOPMENT
         </p>
-        <p id="about-second" class="text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/50">
+        <p id="about-second"
+          class="text-4xl md:text-6xl lg:text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/50">
           • EMPATHY • PROTOTYPE • EMPATHY • TESTING • DEVELOPMENT • IDEATE • DESIGN • DEFINE • • DEVELOPMENT
         </p>
       </div>
     </section>
 
-    <section id="work" class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto">
+    <section id="work" class="px-6 md:px-10 relative mt-48 mb-10 container inset-x-0 mx-auto">
       <p id="heading" class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">HOW I WORK</p>
       <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl dark:text-white">DEDICATING MY TIME IN
         CRAFTING A
@@ -223,26 +268,31 @@
       </div>
     </section>
 
-    <section id="projects" class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto overflow-x-hidden">
+    <section id="projects" class="px-6 md:px-10 relative mt-48 mb-10 container inset-x-0 mx-auto overflow-x-hidden">
       <p id="heading" class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">SELECTED PROJECTS</p>
       <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
         HERE ARE MY SELECTED SAMPLE PROJECTS DEVELOPED RECENTLY
       </p>
-      <div class="inline-flex gap-x-6 horizontal-scrolling mt-6 overflow-x-hidden">
-        <div class="panel max-w-[624px] max-h-[32rem] w-[624px] h-[32rem] bg-red-500">
-          ONE
+      <div class="inline-flex gap-x-6 horizontal-scrolling mt-6">
+        <div
+          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
+          Project goes here
         </div>
-        <div class="panel max-w-[624px] max-h-[32rem] w-[624px] h-[32rem] bg-orange-500">
-          TWO
+        <div
+          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
+          Project goes here
         </div>
-        <div class="panel max-w-[624px] max-h-[32rem] w-[624px] h-[32rem] bg-purple-500">
-          THREE
+        <div
+          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
+          Project goes here
         </div>
-        <div class="panel max-w-[624px] max-h-[32rem] w-[624px] h-[32rem] bg-green-500">
-          FOUR
+        <div
+          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
+          Project goes here
         </div>
-        <div class="panel max-w-[624px] max-h-[32rem] w-[624px] h-[32rem] bg-gray-500">
-          FIVE
+        <div
+          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
+          Project goes here
         </div>
       </div>
     </section>
@@ -250,24 +300,26 @@
     <section class="relative overflow-hidden mt-48 mb-32">
       <div class="w-full whitespace-nowrap">
         <p id="stack-first"
-          class="text-7xl text-gray-700/50 tracking-wide -translate-x-1/2 font-medium dark:text-white/50">
-          CSS • LARAVEL • LIVEWIRE • GSAP • GIT • TAILWIND • PHOTOSHOP
+          class="text-4xl md:text-6xl lg:text-7xl text-gray-700/50 tracking-wide -translate-x-1/2 font-medium dark:text-white/50">
+          • PHP • JAVASCRIPT • CSS • LARAVEL • LIVEWIRE • GSAP • GIT • TAILWIND • PHOTOSHOP
         </p>
-        <p id="stack-second" class="text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/50">
-          • SASS • EMPATHY • ADOBE XD • CORDOVA • JAVASCRIPT • DESIGN • GSAP •
+        <p id="stack-second"
+          class="text-4xl md:text-6xl lg:text-7xl text-gray-700/50 mt-4 tracking-wide font-medium dark:text-white/50">
+          • SASS • EMPATHY • ADOBE XD • CORDOVA • JAVASCRIPT • DESIGN • GSAP • PHP
         </p>
       </div>
     </section>
 
-    <section class="px-6 relative mt-48 mb-10 container inset-x-0 mx-auto">
+    <section class="px-6 md:px-10 relative mt-48 mb-10 container inset-x-0 mx-auto">
       <p id="heading" class="text-gray-500 font-bold  dark:text-gray-300 tracking-wider">
         TOOLS AND TECH STACK
       </p>
       <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
         TOOLS AND TECHSTACK THAT I’VE BEEN USING FOR THE PROJECTS
       </p>
-      <div class="relative flex flex-wrap gap-x-3 gap-y-8 mt-14">
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
+      <div class="relative flex flex-wrap gap-x-3 gap-y-8 mt-14 tag-cloud">
+        <p>SITE UNDER DEVELOPMENT ...</p>
+        <!-- <div class="rounded-[16px] p-6 flex items-center gap-x-3">
           <img src="../assets/images/adobex.png" alt="" class="w-12 h-12">
           <p class="font-bold text-lg">Adobe XD</p>
         </div>
@@ -318,11 +370,12 @@
         <div class="rounded-[16px] p-6 flex items-center gap-x-3">
           <img src="../assets/images/javascriptlogo.png" alt="" class="w-16 h-16">
           <p class="font-bold text-lg">JavaScript</p>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <footer class="px-6 relative mt-18 mb-6 container inset-x-0 mx-auto items-center h-screen flex">
+    <footer id="footer"
+      class="px-6 md:px-10 relative mt-18 mb-6 container inset-x-0 mx-auto items-center h-screen flex">
       <div class="w-full">
         <p id="heading" class="text-gray-500 font-bold  dark:text-gray-300 tracking-wider">
           GET IN TOUCH
@@ -330,11 +383,11 @@
         <p id="subheading" class="text-xl font-black mt-4 md:text-3xl md:max-w-2xl">
           GOT SOME IDEAS, PROJECTS OR JUST WANT TO SAY HELLO? GO AHEAD
         </p>
-        <div class="flex">
-          <div class="w-full md:w-1/2 lg:w-4/6">
-            <p class="text-7xl tracking-wider md:text-9xl mt-12 font-bold">
-              LET'S <span class="inline-block">TALK
-                <svg class="inline -ml-4 -mb-3 animate-swing dark:stroke-white black stroke-black" width="32"
+        <div class="flex flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 lg:w-4/6">
+            <p class="text-6xl tracking-wider md:text-8xl mt-12 font-bold">
+              LET'S <span class="inline-block relative">TALK
+                <svg class="absolute -right-10 bottom-0 animate-swing dark:stroke-white black stroke-black" width="32"
                   height="33" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_371_12" class="">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -375,7 +428,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden md:inline-block md:w-1/2 lg:w-2/6">
+          <div class="w-1/2 mx-auto sm:w-2/6 md:inline-block md:w-1/2 lg:w-2/6">
             <img src="../assets/images/footer.png" alt="">
           </div>
         </div>
@@ -390,8 +443,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
-  <script src="../assets/js/splide.min.js"></script>
   <script src="../assets/js/circletype.min.js"></script>
+  <script src="../assets/js/terminal.js"></script>
   <script src="../assets/js/index.js"></script>
 </body>
 

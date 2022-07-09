@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+*::selection {
+  background: none;
+}
+
+
+.embedded_link {
+  color: rgb(110, 47, 255);
+  font-weight: bold;
+}
+
+.terminal_text {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+}
+
+.has-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-output {
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.column-child {
+  flex: 1;
+}
+
+.terminal-line {
+  position: relative;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 0.9em;
+  color: #e6e6e6;
+  margin-top: 3px;
+  word-wrap: break-word;
+
+}
+
+.directory {
+  color: #75e1e7;
+  font-weight: 500;
+}
+
+.success {
+  color: #8dd39e;
+}
+
+.link {
+  color: rgba(34, 197, 94);
+
+}
+
+.help {
+  font-weight: bold;
+  color: #f7572b;
+  /* e6945e */
+}
+
+.skills {
+  color: #0000ff;
+}
+
+.aboutHead {
+  color: #4b40e0;
+}
+
+.aboutTail {
+  color: #00d742;
+}
+
+.code,
+.error,
+.fa-heart {
+  color: rgb(244 63 94);
+  font-weight: bold;
+}
+
+.dummy-keyboard {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.anim-typewriter {
+  animation: blinkTextCursor 0.75s ease-in-out infinite;
+}
+
+.line {
+  margin-left: -6px;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0.9;
+  border-right: 7px solid rgb(122, 142, 255);
+}
+
+@keyframes blinkTextCursor {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

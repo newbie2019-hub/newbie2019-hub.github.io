@@ -3,6 +3,7 @@ gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollToPlugin);
 
 let bodyScrollBar;
+let mouseSize = 30;
 const circleType = new CircleType(document.getElementById('rotated'))
 const select = (e) => document.querySelector(e);
 
@@ -111,20 +112,41 @@ function animationInit() {
 let circle = document.getElementById('mouse')
 
 function moveMouse(e) {
-  gsap.to(circle, 0.4, {
-    x: e.pageX - 30,
-    y: e.pageY - 30,
+  gsap.to(circle, {
+    ease: Power3.easeOut,
+    x: e.pageX - (mouseSize - 10),
+    y: e.pageY - (mouseSize - 10),
   })
 }
 
 
+function smoothScrollTo(e) {
+  e.preventDefault();
+  const scroll = select(e.target.getAttribute("href")).offsetTop
+  gsap.to(bodyScrollBar, { duration: 2, scrollTo: scroll });
+}
+
 function createCursorHover(e) {
 
   if (e.type === 'mouseenter') {
-    circle.classList.add('mouse-interaction')
+    gsap.to(circle, {
+      height: '10px',
+      width: '10px'
+    })
+    mouseSize = 15
+    setTimeout(() => {
+      circle.classList.add('mouse-interaction')
+    }, 120)
   }
   else if (e.type === 'mouseleave') {
-    circle.classList.remove('mouse-interaction')
+    gsap.to(circle, {
+      height: '30px',
+      width: '30px'
+    })
+    mouseSize = 30
+    setTimeout(() => {
+      circle.classList.remove('mouse-interaction')
+    }, 120)
   }
 }
 
@@ -160,6 +182,10 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   ScrollTrigger.refresh();
+
+  select('#to-top').addEventListener('mouseenter', createCursorHover);
+  select('#to-top').addEventListener('mouseleave', createCursorHover);
+  select('#to-top').addEventListener('click', smoothScrollTo);
 });
 
 
@@ -198,8 +224,9 @@ gsap.from('.card-work', {
     trigger: 'div.card-work',
     start: 'top bottom',
     end: 'top center',
+    scrub: 4
   },
-  stagger: { amount: .5 }
+  stagger: { each: .5 }
 })
 
 /**
@@ -212,7 +239,7 @@ gsap.to('#projects', {
     trigger: "#projects",
     start: 'top top',
     pin: 'section #projects',
-    markers: true,
+    markers: false,
     scrub: 1,
     end: "+=1000",
   }
@@ -220,7 +247,6 @@ gsap.to('#projects', {
 
 let sections = gsap.utils.toArray(".panel");
 
-console.log(select('.horizontal-scrolling').scrollWidth)
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
   ease: "none",
@@ -229,10 +255,27 @@ gsap.to(sections, {
     start: 'center center',
     pin: true,
     pinReparent: true,
-    markers: true,
+    markers: false,
     scrub: 1,
     end: "+=1000",
     anticipatePin: 1
+  }
+});
+
+/**
+ *  Scroll to top button
+ * 
+ */
+gsap.from('#to-top', {
+  opacity: 0,
+  y: 60,
+  duration: 1,
+  ease: Circ.easeOut,
+  scrollTrigger: {
+    trigger: "#footer",
+    start: 'top bottom',
+    end: '+=40',
+    scrub: true
   }
 });
 
