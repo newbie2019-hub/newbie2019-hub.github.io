@@ -10,10 +10,16 @@ const select = (e) => document.querySelector(e);
 const navLinks = gsap.utils.toArray('nav ul li a')
 const projectCards = gsap.utils.toArray('.cursor-grab')
 
+
+var timeline_navigation = gsap.timeline({ paused: "true" })
+
+timeline_navigation.fromTo(".menu", { css: { transform: 'translateX(-100%, 0)' } }, { duration: .65, x: "0%", ease: Expo.easeInOut, repeatRefresh: true })
+timeline_navigation.fromTo(".li", { y: "-100%", opacity: 0 }, { duration: .5, opacity: 1, y: '0%', stagger: 0.25 });
+timeline_navigation.fromTo(".right-side", { opacity: 0 }, { duration: 1, opacity: 1, stagger: 0.25, ease: Expo.easeOut }, "-=0.4");
+
 bodyScrollBar = Scrollbar.init(select('#viewport'), {
   damping: 0.1, delegateTo: document, renderByPixel: true
 });
-
 
 bodyScrollBar.addListener((s) => {
   currentScroll = s.offset.y
@@ -281,6 +287,15 @@ gsap.from('#to-top', {
 
 
 
+// function toggle() {
+//   console.log('playing..')
+//   timeline_navigation.play();
+// }
+
+// function toggleClose() {
+//   console.log('closing...')
+//   timeline_navigation.reverse();
+// }
 
 
 /**
