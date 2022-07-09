@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link href="/dist/main.css" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
+  <title>Yvan Sabay - Full Stack Web Developer</title>
 </head>
 
 <body id="" class="overflow-x-hidden dark:bg-neutral-900 dark:text-white bg-white">
@@ -42,42 +43,46 @@
       </li>
     </ul>
     <div class="flex items-center gap-x-4">
-      <div class="relative w-8 align-middle select-none transition duration-200 ease-in">
-        <input type="checkbox" name="toggle" id="toggle"
-          class="toggle-checkbox absolute block w-4 h-4 rounded-full bg-white border-2 appearance-none cursor-pointer" />
-        <label for="toggle"
-          class="toggle-label block overflow-hidden h-4 rounded-full bg-gray-300 cursor-pointer"></label>
+      <div class="relative w-8 align-middle select-none transition duration-200 ease-in cursor-pointer">
+        <svg id="moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg>
+        <svg id="sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            clip-rule="evenodd" />
+        </svg>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-          clip-rule="evenodd" />
-      </svg>
+      <div onclick="toggle()" class="cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
     </div>
   </nav>
 
-  <div class="menu absolute top-0 left-0 w-full h-screen z-50 bg-white dark:bg-neutral-900 -translate-y-full">
-    <div class="button" onclick="toggleClose()">x</div>
+  <div class="menu absolute top-0 left-0 w-full h-screen z-50 bg-white dark:bg-neutral-900 -translate-x-full">
+    <div class="text-[1.5rem] font-bold cursor-pointer right-10 absolute top-6" onclick="toggleClose()">x</div>
     <div class="h-screen">
-      <div class="flex h-full justify-around items-center">
+      <div class="flex h-full items-center justify-center gap-x-24">
         <ul class="ul">
-          <li class="li"><a href="#home" class="font-medium text-[4rem]">Home</a></li>
-          <li class="li"><a href="#whitepaper" class="font-medium text-[4rem]">About</a></li>
-          <li class="li"><a href="#contact" class="font-medium text-[4rem]">Projects</a></li>
-          <li class="li"><a href="" target="_" class="font-medium text-[4rem]">Skills</a></li>
-          <div class="mt-4 social sm:flex lg:hidden flex-wrap">
+          <li class="li"><a href="#home" class="navlink">Home</a></li>
+          <li class="li"><a href="#whitepaper" class="navlink">About</a></li>
+          <li class="li"><a href="#contact" class="navlink">Projects</a></li>
+          <li class="li"><a href="" target="_" class="navlink">Skills</a></li>
+          <div class="mt-4 social sm:flex lg:hidden gap-x-6">
             <a href="" target="_" class=" ">Instagram</a>
             <a href="" target="_" class="">Facebook</a>
           </div>
         </ul>
         <div class="right-side hidden lg:flex flex-col">
-          <p class="text-lg">Got some questions, ideas, proposal, <br />or just want to say hello? </p><br />
-          <p class="text-lg">Go ahead and send me an email at <br /> sabayyvan2018@gmail.com</p>
-          <div class="d-flex mt-4 social">
-            <a href="https://discord.gg/xw36HARr" target="_" class="">Discord</a>
-            <a href="https://twitter.com/BBDinnovator" target="_" class="">Twitter</a>
-            <a href="https://www.instagram.com/bondbuilder.io/" target="_" class="">Instagram</a>
-            <a href="https://t.me/Bondbuilder" target="_" class="">Telegram</a>
+          <p class="text-[2rem]">Got some questions, ideas, proposal, <br />or just want to say hello? </p><br />
+          <p class="text-[2rem]">Go ahead and send me an email at <br /> sabayyvan2018@gmail.com</p>
+          <div class="flex mt-4 social gap-x-6">
+            <a href="" target="_" class="">Instagram</a>
+            <a href="" target="_" class="">Facebook</a>
           </div>
         </div>
       </div>
@@ -152,7 +157,7 @@
   <div id="viewport" class="">
     <section id="home"
       class="px-6 gap-y-6 md:px-10 relative flex flex-col md:flex-row justify-center w-screen min-h-screen items-center container inset-x-0 mx-auto">
-      <div class="w-full pt-32 md:w-1/2 md:pt-0">
+      <div class="w-full pt-24 sm:pt-32 md:w-1/2 md:pt-0">
         <p class="md:text-2xl">
           Hi! I am,
         </p>

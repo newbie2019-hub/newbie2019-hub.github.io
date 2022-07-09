@@ -15,7 +15,7 @@ var timeline_navigation = gsap.timeline({ paused: "true" })
 
 timeline_navigation.fromTo(".menu", { css: { transform: 'translateX(-100%, 0)' } }, { duration: .65, x: "0%", ease: Expo.easeInOut, repeatRefresh: true })
 timeline_navigation.fromTo(".li", { y: "-100%", opacity: 0 }, { duration: .5, opacity: 1, y: '0%', stagger: 0.25 });
-timeline_navigation.fromTo(".right-side", { opacity: 0 }, { duration: 1, opacity: 1, stagger: 0.25, ease: Expo.easeOut }, "-=0.4");
+timeline_navigation.fromTo(".right-side", { opacity: 0 }, { duration: 1, opacity: 1, stagger: { amount: 1 }, ease: Expo.easeOut }, "-=0.4");
 
 bodyScrollBar = Scrollbar.init(select('#viewport'), {
   damping: 0.1, delegateTo: document, renderByPixel: true
@@ -160,17 +160,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (JSON.parse(localStorage.getItem('darkMode'))) {
     document.documentElement.classList.add('dark')
-    document.getElementById('toggle').setAttribute('checked', true)
+    document.getElementById('moon').classList.toggle('hidden')
+  }
+  else {
+    document.getElementById('sun').classList.toggle('hidden')
+
   }
 
-  document.getElementById('toggle').addEventListener('change', function () {
-    if (this.checked) {
-      localStorage.setItem('darkMode', true)
-      document.documentElement.classList.add('dark')
-    } else {
-      localStorage.setItem('darkMode', false)
-      document.documentElement.classList.remove('dark')
-    }
+  document.getElementById('sun').addEventListener('click', function () {
+    localStorage.setItem('darkMode', false)
+    document.documentElement.classList.remove('dark')
+    document.getElementById('sun').classList.toggle('hidden')
+    document.getElementById('moon').classList.toggle('hidden')
+  })
+
+  document.getElementById('moon').addEventListener('click', function () {
+    localStorage.setItem('darkMode', true)
+    document.documentElement.classList.add('dark')
+    document.getElementById('moon').classList.toggle('hidden')
+    document.getElementById('sun').classList.toggle('hidden')
   })
 
   navLinks.forEach(link => {
@@ -287,15 +295,15 @@ gsap.from('#to-top', {
 
 
 
-// function toggle() {
-//   console.log('playing..')
-//   timeline_navigation.play();
-// }
+function toggle() {
+  console.log('playing..')
+  timeline_navigation.play();
+}
 
-// function toggleClose() {
-//   console.log('closing...')
-//   timeline_navigation.reverse();
-// }
+function toggleClose() {
+  console.log('closing...')
+  timeline_navigation.reverse();
+}
 
 
 /**

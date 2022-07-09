@@ -5,7 +5,8 @@ const consoleElement = document.getElementsByClassName('console-content')[0]
 
 const COMMANDS = {
   gcash: "<span >Whoa!!! You typed in the <span class='code'>forbidden</span> command! You are now obliged to donate a minimum amount of PHP 50.00 to my gcash account +63 935 531 0166. Just Kidding hehe</span>",
-  n: "OK",
+  hello: "Hi! :)",
+  hi: "Hello! :)",
   no: "OK",
   about:
     "I am Yvan C. Sabay a Full Stack Web Developer and a UI-UX Designer. <a style='color: rgba(34, 197, 94)' href ='https://github.com/newbie2019-hub' target='_blank'> Github,</a> <a style='color: rgba(34, 197, 94)' href ='https://www.facebook.com/sabay.yvan/' target='_blank'> Facebook</a>",
