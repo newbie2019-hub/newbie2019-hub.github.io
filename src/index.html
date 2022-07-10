@@ -43,7 +43,7 @@
       </li>
     </ul>
     <div class="flex items-center gap-x-4">
-      <div class="relative w-8 align-middle select-none transition duration-200 ease-in cursor-pointer">
+      <div class="relative p-2 align-middle select-none transition duration-200 ease-in cursor-pointer  transition ease-in-out duration-300 hover:bg-gray-300 dark:hover:bg-neutral-700 rounded-full">
         <svg id="moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         </svg>
@@ -53,7 +53,7 @@
             clip-rule="evenodd" />
         </svg>
       </div>
-      <div onclick="toggle()" class="cursor-pointer">
+      <div onclick="toggle()" class="cursor-pointer transition ease-in-out duration-300 hover:bg-gray-300 p-2 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -64,7 +64,7 @@
   </nav>
 
   <div class="menu absolute top-0 left-0 w-full h-screen z-50 bg-white dark:bg-neutral-900 -translate-x-full">
-    <div class="text-[1.5rem] font-bold cursor-pointer right-10 absolute top-6" onclick="toggleClose()">x</div>
+    <div class="text-[1.5rem] font-bold cursor-pointer right-10 absolute top-6 select-none" onclick="toggleClose()">x</div>
     <div class="h-screen">
       <div class="flex h-full items-center justify-center gap-x-24">
         <ul class="ul">
@@ -73,6 +73,7 @@
           <li class="li"><a href="#contact" class="navlink">Projects</a></li>
           <li class="li"><a href="" target="_" class="navlink">Skills</a></li>
           <div class="mt-4 social sm:flex lg:hidden gap-x-6">
+            <a href="" target="_" class=" ">Github</a>
             <a href="" target="_" class=" ">Instagram</a>
             <a href="" target="_" class="">Facebook</a>
           </div>
@@ -81,6 +82,7 @@
           <p class="text-[2rem]">Got some questions, ideas, proposal, <br />or just want to say hello? </p><br />
           <p class="text-[2rem]">Go ahead and send me an email at <br /> sabayyvan2018@gmail.com</p>
           <div class="flex mt-4 social gap-x-6">
+            <a href="" target="_" class="">Github</a>
             <a href="" target="_" class="">Instagram</a>
             <a href="" target="_" class="">Facebook</a>
           </div>
@@ -328,8 +330,7 @@
             </svg>
           </div>
           <p class="font-bold text-lg mt-3 dark:text-white">DEVELOPMENT</p>
-          <p class="mt-3 dark:text-white">Test the created prototype and reiterate or redefine the problems and
-            solution.</p>
+          <p class="mt-3 dark:text-white">Start the development of the product when testing already satisfies the user.</p>
         </div>
       </div>
     </section>
@@ -342,23 +343,23 @@
       <div class="inline-flex gap-x-6 horizontal-scrolling mt-6">
         <div
           class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Project goes here
+          Site under development ...
         </div>
         <div
           class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Project goes here
+          Site under development ...
         </div>
         <div
           class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Project goes here
+          Site under development ...
         </div>
         <div
           class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Project goes here
+          Site under development ...
         </div>
         <div
           class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Project goes here
+          Site under development ...
         </div>
       </div>
     </section>
@@ -488,7 +489,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>

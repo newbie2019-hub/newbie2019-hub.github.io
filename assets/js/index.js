@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(Draggable);
 gsap.registerPlugin(ScrollToPlugin);
 
 let bodyScrollBar;
@@ -204,6 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 gsap.utils.toArray('#heading').forEach((div, index) => {
+  console.log('Heading', div)
   gsap.from(div, {
     x: -50,
     opacity: 0,
@@ -243,38 +244,37 @@ gsap.from('.card-work', {
   stagger: { each: .5 }
 })
 
-/**
- *  Pin parent content of 
- *  fake horizontal scrolling
- *  
- */
-gsap.to('#projects', {
-  scrollTrigger: {
-    trigger: "#projects",
-    start: 'top top',
-    pin: 'section #projects',
-    markers: false,
-    scrub: 1,
-    end: "+=1000",
-  }
-});
+// /**
+//  *  Pin parent content of 
+//  *  fake horizontal scrolling
+//  *  
+//  */
+// gsap.to('#projects', {
+//   scrollTrigger: {
+//     trigger: "#projects",
+//     start: 'top top',
+//     pin: 'section #projects',
+//     markers: false,
+//     scrub: 1,
+//     end: "+=1000",
+//   }
+// });
 
-let sections = gsap.utils.toArray(".panel");
-
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#projects",
-    start: 'center center',
-    pin: true,
-    pinReparent: true,
-    markers: false,
-    scrub: 1,
-    end: "+=1000",
-    anticipatePin: 1
-  }
-});
+// let sections = gsap.utils.toArray(".panel");
+// gsap.to(sections, {
+//   xPercent: -100 * (sections.length - 1),
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: "#projects",
+//     start: 'center center',
+//     pin: true,
+//     pinReparent: true,
+//     markers: false,
+//     scrub: 1,
+//     end: "+=1000",
+//     anticipatePin: 1
+//   }
+// });
 
 /**
  *  Scroll to top button
@@ -296,12 +296,10 @@ gsap.from('#to-top', {
 
 
 function toggle() {
-  console.log('playing..')
   timeline_navigation.play();
 }
 
 function toggleClose() {
-  console.log('closing...')
   timeline_navigation.reverse();
 }
 

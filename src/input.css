@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
     left: 0;
     margin-bottom: -2px;
     width: 28px;
-    height: 4px;
+    height: 3px;
     background-color: rgb(37, 99, 235);
 }
 
