@@ -9,6 +9,7 @@ const select = (e) => document.querySelector(e);
 
 const navLinks = gsap.utils.toArray('nav ul li a')
 const projectCards = gsap.utils.toArray('.panel')
+const btnNavigation = gsap.utils.toArray('.btn-navigation')
 
 
 var timeline_navigation = gsap.timeline({ paused: "true" })
@@ -192,6 +193,11 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('mouseleave', createCursorHover);
   });
 
+  btnNavigation.forEach(link => {
+    link.addEventListener('mouseenter', createCursorHover);
+    link.addEventListener('mouseleave', createCursorHover);
+  });
+
   document.addEventListener('mousemove', function (e) {
     moveMouse(e)
   })
@@ -244,7 +250,7 @@ gsap.from('.card-work', {
 
 let sections = document.querySelectorAll(".panel");
 let scrollContainer = document.querySelector(".horizontal-scrolling");
-let scrollTween;
+let scrollTween, progress = 0;
 
 ScrollTrigger.matchMedia({
   // sm
@@ -282,7 +288,8 @@ Draggable.create(".proxy", {
     circle.classList.remove('mix-blend-exclusion')
     circle.classList.remove('mouse-interaction')
     arrow.classList.remove('opacity-0')
-    scrollTween.progress(((this.x * -1) - 0) / ((480 - (sections.length - 1)) - 0) * 1)
+    progress = ((this.x * -1) - 0) / ((480 - (sections.length - 1)) - 0) * 1
+    scrollTween.progress(progress)
   },
   onClick() {
 
@@ -292,8 +299,32 @@ Draggable.create(".proxy", {
     circle.classList.remove('mouse-dragging')
     circle.classList.add('mouse-interaction')
     arrow.classList.add('opacity-0')
+    if (progress > 1) {
+      progress = 1
+    }
+    if (progress < 0) {
+      progress = 0
+    }
+    console.log(progress)
   }
 });
+
+// const prevCard = () => {
+//   if (progress != 1) {
+//     scrollTween.progress(progress + .25)
+//     progress = progress + .25
+//   } else {
+//     scrollTween.progress(progress - .25)
+//     progress = progress - .25
+//   }
+// }
+
+// const nextCard = () => {
+//   if (progress == 1 || progress < 0) return
+//   scrollTween.progress(progress + .25)
+//   progress = progress + .25
+
+// }
 
 // /**
 //  *  Pin parent content of 

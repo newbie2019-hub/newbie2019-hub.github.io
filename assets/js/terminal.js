@@ -79,9 +79,7 @@ const execute = function executeCommand(input) {
 };
 
 const key = (e) => {
-  console.log(e)
   const input = userInput.innerHTML;
-
   if (e.keyCode == 8) {
     userInput.innerHTML = userInput.innerHTML.slice(0, userInput.innerHTML.length - 1);
     return;
@@ -97,23 +95,17 @@ const key = (e) => {
 };
 
 const virtualKey = (e) => {
-  console.log(e)
+  if (e.inputType == 'deleteContentBackward') return
+
   const input = userInput.innerHTML;
-
-  if (e.inputType == 'deleteContentBackward') {
-    // console.log('once')
-    // userInput.innerHTML = userInput.innerHTML.slice(0, userInput.innerHTML.length - 1);
-    return;
-  }
-
   userInput.innerHTML = input + e.data;
 };
 
 const virtualKeyEnter = (e) => {
   const input = userInput.innerHTML;
   if (e.key === "Enter" || e.key === 13) {
-    execute(input);
     userInput.innerHTML = "";
+    execute(input);
     userInput.focus()
     return;
   }

@@ -104,7 +104,7 @@
   <div id="mouse" class="mouse-follow mix-blend-exclusion cursor-effect">
     <div class="mouse-arrow opacity-0"></div>
   </div>
-<!--       
+  <!--       
   <div
     class="loading opacity-0 fixed inset-0 h-screen w-screen flex items-center justify-center dark:bg-neutral-900  bg-white z-20">
     <div class="kamusta absolute">
@@ -163,7 +163,7 @@
   <div id="viewport" class="">
     <section id="home"
       class="px-6 gap-y-6 md:px-10 relative flex flex-col md:flex-row justify-center w-screen min-h-screen items-center container inset-x-0 mx-auto">
-      <div class="w-full pt-18 sm:pt-28 md:w-1/2 md:pt-0">
+      <div class="w-full pt-24 sm:pt-28 md:w-1/2 md:pt-0">
         <p class="md:text-2xl">
           Hi! I am,
         </p>
@@ -188,13 +188,22 @@
                 stroke="currentColor" />
             </svg>
           </span>
-
         </p>
         <p class="text-md max-w-md mt-3 md:text-lg lg:text-md font-light md:max-w-lg">A Full Stack Web Developer and a
           UI-UX
           Designer.
           I enjoy using my skill-set with people to accomplish their
           goals and ideas. </p>
+        <div class="flex items-center gap-x-4 cursor-pointer mt-4">
+          <button id="download-cv"
+            class="transition ease-in-out rounded-full hover:animate-bounce w-8 h-8 md:w-10 md:h-10 border-2 border-black dark:border-gray-400 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 13l-5 5m0 0l-5-5m5 5V6" />
+            </svg>
+          </button>
+          <label for="download-cv" class="cursor-pointer">Download CV</label>
+        </div>
       </div>
       <div class="w-full md:w-1/2 flex items-center">
         <div class="console">
@@ -254,7 +263,7 @@
         CREATIVE PROCESS TO
         MAKE A USEFUL PRODUCT.
       </p>
-      <div class="relative flex flex-wrap gap-x-3 gap-y-8 mt-14 justify-center">
+      <div class="relative flex flex-wrap gap-x-3 gap-y-8 mt-14">
         <div
           class="card-work bg-white rounded-[16px] dark:bg-neutral-800 shadow-md p-6 relative border dark:border-neutral-600 flex-1 min-w-[240px] sm:min-w-[246px] md:min-w-[320px]">
           <div
@@ -347,7 +356,7 @@
       </p>
       <div class="inline-flex gap-x-6 horizontal-scrolling mt-6">
         <div
-          class="panel max-w-[285px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          class="panel max-w-[290px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
           <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
             001 - Touchless Information Kiosk
             <p class="text-justify mt-3">A touchless interactive kiosk using MediaPipe Hands Model with custom built
@@ -355,7 +364,7 @@
           </div>
         </div>
         <div
-          class="panel max-w-[285px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          class="panel max-w-[290px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
           <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
             002 - On-Device SMS
             <p class="text-justify mt-3">Send an SMS by using your mobile device from your PHP, Node or any application
@@ -363,7 +372,7 @@
           </div>
         </div>
         <div
-          class="panel max-w-[285px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          class="panel max-w-[290px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
           <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
             003 - Trello Clone
             <p class="text-justify mt-3">A Trello clone developed using Vue.JS for the front-end and Laravel for the
@@ -371,7 +380,7 @@
           </div>
         </div>
         <div
-          class="panel max-w-[285px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          class="panel max-w-[290px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
           <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
             004 - Car Rental
             <p class="text-justify mt-3">A Car Rental developed using Vue.JS for the front-end and Laravel for the
@@ -379,15 +388,32 @@
           </div>
         </div>
         <div
-          class="panel max-w-[285px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          class="panel max-w-[290px] sm:max-w-[330px] md:max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
           <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
             005 - City Housing
-            <p class="text-justify mt-3">A Management Information System for City Housing developed using TALL Stack.</p>
+            <p class="text-justify mt-3">A Management Information System for City Housing developed using TALL Stack.
+            </p>
           </div>
         </div>
         <div class="proxy"></div>
       </div>
       <p class="mt-4 dark:text-gray-400 text-xs tracking-wider">← DRAG TO SCROLL →</p>
+      <div class="flex justify-end gap-x-4">
+        <button
+          class="rounded-full w-12 h-12 md:w-16 md:h-16 border-black dark:border-gray-600 border-2 items-center justify-center flex  btn-navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+          </svg>
+        </button>
+        <button onclick="nextCard()"
+          class="rounded-full w-12 h-12 md:w-16 md:h-16 border-black dark:border-gray-600 border-2 items-center justify-center flex btn-navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </button>
+      </div>
     </section>
 
     <section class="relative overflow-hidden mt-48 mb-32">
@@ -410,7 +436,7 @@
       <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
         TOOLS AND TECHSTACK THAT I’VE BEEN USING FOR THE PROJECTS
       </p>
-      <div class="relative flex flex-wrap gap-y-12 mt-14 tag-cloud"> 
+      <div class="relative flex flex-wrap gap-y-12 mt-14 tag-cloud">
         <div class="flex items-center gap-x-3 col-4 sm:col-3">
           <img src="../assets/images/adobex.png" alt="" class="w-8 h-8 md:w-12 md:h-12">
           <p class="font-bold text-sm sm:text-md md:text-lg">Adobe XD</p>
