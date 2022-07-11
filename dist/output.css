@@ -897,8 +897,12 @@ video {
   max-width: 28rem;
 }
 
-.max-w-\[290px\] {
-  max-width: 290px;
+.max-w-\[285px\] {
+  max-width: 285px;
+}
+
+.max-w-\[284px\] {
+  max-width: 284px;
 }
 
 .flex-1 {
@@ -1229,10 +1233,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
 }
 
 .text-justify {
@@ -1676,8 +1676,8 @@ body::-webkit-scrollbar {
     padding-right: 2.5rem;
   }
 
-  .sm\:pt-32 {
-    padding-top: 8rem;
+  .sm\:pt-28 {
+    padding-top: 7rem;
   }
 
   .sm\:text-8xl {

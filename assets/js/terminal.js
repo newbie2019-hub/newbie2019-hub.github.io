@@ -96,6 +96,29 @@ const key = (e) => {
   userInput.innerHTML = input + e.key;
 };
 
+const virtualKey = (e) => {
+  console.log(e)
+  const input = userInput.innerHTML;
+
+  if (e.inputType == 'deleteContentBackward') {
+    // console.log('once')
+    // userInput.innerHTML = userInput.innerHTML.slice(0, userInput.innerHTML.length - 1);
+    return;
+  }
+
+  userInput.innerHTML = input + e.data;
+};
+
+const virtualKeyEnter = (e) => {
+  const input = userInput.innerHTML;
+  if (e.key === "Enter" || e.key === 13) {
+    execute(input);
+    userInput.innerHTML = "";
+    userInput.focus()
+    return;
+  }
+};
+
 const backspace = (e) => {
   if (e.keyCode !== 8 && e.keyCode !== 46) {
     return;
@@ -132,7 +155,8 @@ document.addEventListener("keydown", up);
 
 document.addEventListener("keydown", backspace);
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  document.addEventListener("keydown", key);
+  document.getElementById('dummyKeyboard').addEventListener('input', virtualKey)
+  document.addEventListener("keydown", virtualKeyEnter);
 } else {
   document.addEventListener("keypress", key);
 }
