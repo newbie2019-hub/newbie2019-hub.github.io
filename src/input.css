@@ -18,6 +18,26 @@
     .navlink {
         @apply font-medium text-[4rem]
     }
+
+    .col-3 {
+        @apply w-3/12
+    }
+
+    .col-4 {
+        @apply w-4/12
+    }
+
+    .col-6 {
+        @apply w-6/12
+    }
+
+    .col-9 {
+        @apply w-9/12
+    }
+
+    .col-12 {
+        @apply w-full
+    }
 }
 
 
@@ -68,7 +88,7 @@ body::-webkit-scrollbar {
 
 @media (max-width: 640px) { 
     .rotating-text {
-        bottom: -140px;
+        bottom: -120px;
     }
  }
 
@@ -92,17 +112,49 @@ body::-webkit-scrollbar {
     background-color: #68d391;
 }
 
-div.mouse-interaction {
-    /* mix-blend-mode: exclusion;
-    background-color: white;
-    border-radius: 50% !important; */
-}
-
 .mouse-interaction::after {
     position: absolute;
     content: '';
     width: 50px !important;
     height: 50px !important;
+    transition: all 250ms;
+    border: 3px dotted rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: rotating 3s linear infinite;
+    /* transition: all 250ms ease-in-out; */
+}
+
+.mouse-arrow::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: -60px;
+    width: 38px;
+    height: 38px;
+    clip-path: polygon(50% 0%, 0 50%, 50% 100%);
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+.mouse-arrow::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: -60px;
+    width: 38px;
+    height: 38px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+.mouse-dragging::after {
+    position: absolute;
+    content: '';
+    width: 70px !important;
+    height: 70px !important;
     transition: all 250ms;
     border: 3px dotted rgb(255, 255, 255);
     border-radius: 50%;
@@ -120,7 +172,6 @@ div.mouse-interaction {
     opacity: 1;
     display: flex;
     align-items: center;
-    mix-blend-mode: exclusion;
     background-color: white;
     justify-content: center;
     z-index: 999 !important;

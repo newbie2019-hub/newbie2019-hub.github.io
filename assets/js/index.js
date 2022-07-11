@@ -8,7 +8,7 @@ const circleType = new CircleType(document.getElementById('rotated'))
 const select = (e) => document.querySelector(e);
 
 const navLinks = gsap.utils.toArray('nav ul li a')
-const projectCards = gsap.utils.toArray('.cursor-grab')
+const projectCards = gsap.utils.toArray('.panel')
 
 
 var timeline_navigation = gsap.timeline({ paused: "true" })
@@ -116,6 +116,7 @@ function animationInit() {
  *  
  */
 let circle = document.getElementById('mouse')
+let arrow = document.getElementsByClassName('mouse-arrow')[0]
 
 function moveMouse(e) {
   gsap.to(circle, {
@@ -204,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 gsap.utils.toArray('#heading').forEach((div, index) => {
-  console.log('Heading', div)
   gsap.from(div, {
     x: -50,
     opacity: 0,
@@ -244,11 +244,73 @@ gsap.from('.card-work', {
   stagger: { each: .5 }
 })
 
+let sections = document.querySelectorAll(".panel");
+let scrollContainer = document.querySelector(".horizontal-scrolling");
+let scrollTween;
+ScrollTrigger.matchMedia({
+
+  // sm
+  "(max-width: 768px)": function () {
+    // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
+    // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+    scrollTween = gsap.to(sections, {
+      xPercent: -110 * (sections.length - 1),
+      ease: "none",
+      paused: true
+    });
+  },
+  // md
+  "(min-width: 768px)": function () {
+    // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
+    // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+    scrollTween = gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      paused: true
+    });
+  },
+  // desktop - lg
+  "(min-width: 1024px)": function () {
+    // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
+    // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+    scrollTween = gsap.to(sections, {
+      xPercent: -80 * (sections.length - 1),
+      ease: "none",
+      paused: true
+    });
+  },
+});
+
+
+Draggable.create(".proxy", {
+  trigger: scrollContainer,
+  type: "x",
+  onDrag() {
+    circle.classList.add('mouse-dragging')
+    circle.classList.remove('mix-blend-exclusion')
+    circle.classList.remove('mouse-interaction')
+    arrow.classList.remove('opacity-0')
+    scrollTween.progress(((this.x * -1) - 0) / ((480 - (sections.length - 1)) - 0) * 1)
+  },
+  onClick() {
+
+  },
+  onDragEnd: function () {
+    circle.classList.add('mix-blend-exclusion')
+    circle.classList.remove('mouse-dragging')
+    circle.classList.add('mouse-interaction')
+    arrow.classList.add('opacity-0')
+  }
+});
+
 // /**
 //  *  Pin parent content of 
 //  *  fake horizontal scrolling
+//  *  - replaced with drag scroll
 //  *  
 //  */
+// let sections = gsap.utils.toArray(".panel");
+
 // gsap.to('#projects', {
 //   scrollTrigger: {
 //     trigger: "#projects",
@@ -256,13 +318,12 @@ gsap.from('.card-work', {
 //     pin: 'section #projects',
 //     markers: false,
 //     scrub: 1,
-//     end: "+=1000",
+
 //   }
 // });
 
-// let sections = gsap.utils.toArray(".panel");
 // gsap.to(sections, {
-//   xPercent: -100 * (sections.length - 1),
+//   xPercent: -70 * (sections.length - 1),
 //   ease: "none",
 //   scrollTrigger: {
 //     trigger: "#projects",
@@ -271,10 +332,13 @@ gsap.from('.card-work', {
 //     pinReparent: true,
 //     markers: false,
 //     scrub: 1,
-//     end: "+=1000",
-//     anticipatePin: 1
+//     end: function () {
+//       return `+=${ 480 * (sections.length - 1) }`
+//     },
 //   }
 // });
+
+
 
 /**
  *  Scroll to top button

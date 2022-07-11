@@ -43,7 +43,8 @@
       </li>
     </ul>
     <div class="flex items-center gap-x-4">
-      <div class="relative p-2 align-middle select-none transition duration-200 ease-in cursor-pointer  transition ease-in-out duration-300 hover:bg-gray-300 dark:hover:bg-neutral-700 rounded-full">
+      <div
+        class="relative p-2 align-middle select-none transition duration-200 ease-in cursor-pointer  transition ease-in-out duration-300 hover:bg-gray-300 dark:hover:bg-neutral-700 rounded-full">
         <svg id="moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         </svg>
@@ -53,7 +54,8 @@
             clip-rule="evenodd" />
         </svg>
       </div>
-      <div onclick="toggle()" class="cursor-pointer transition ease-in-out duration-300 hover:bg-gray-300 p-2 rounded-full">
+      <div onclick="toggle()"
+        class="cursor-pointer transition ease-in-out duration-300 hover:bg-gray-300 p-2 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -64,7 +66,8 @@
   </nav>
 
   <div class="menu absolute top-0 left-0 w-full h-screen z-50 bg-white dark:bg-neutral-900 -translate-x-full">
-    <div class="text-[1.5rem] font-bold cursor-pointer right-10 absolute top-6 select-none" onclick="toggleClose()">x</div>
+    <div class="text-[1.5rem] font-bold cursor-pointer right-10 absolute top-6 select-none" onclick="toggleClose()">x
+    </div>
     <div class="h-screen">
       <div class="flex h-full items-center justify-center gap-x-24">
         <ul class="ul">
@@ -98,7 +101,8 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" />
     </svg>
   </a>
-  <div id="mouse" class="mouse-follow media-blend cursor-effect">
+  <div id="mouse" class="mouse-follow mix-blend-exclusion cursor-effect">
+    <div class="mouse-arrow opacity-0"></div>
   </div>
   <!--     
   <div
@@ -330,7 +334,8 @@
             </svg>
           </div>
           <p class="font-bold text-lg mt-3 dark:text-white">DEVELOPMENT</p>
-          <p class="mt-3 dark:text-white">Start the development of the product when testing already satisfies the user.</p>
+          <p class="mt-3 dark:text-white">Start the development of the product when testing already satisfies the user.
+          </p>
         </div>
       </div>
     </section>
@@ -338,30 +343,51 @@
     <section id="projects" class="px-6 md:px-10 relative mt-48 mb-10 container inset-x-0 mx-auto overflow-x-hidden">
       <p id="heading" class="text-gray-500 font-bold dark:text-gray-300 tracking-wider">SELECTED PROJECTS</p>
       <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
-        HERE ARE MY SELECTED SAMPLE PROJECTS DEVELOPED RECENTLY
+        HERE ARE MY SELECTED PROJECTS DEVELOPED RECENTLY
       </p>
       <div class="inline-flex gap-x-6 horizontal-scrolling mt-6">
         <div
-          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Site under development ...
+          class="panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
+            001 - Touchless Information Kiosk
+            <p class="text-justify mt-3">A touchless interactive kiosk using MediaPipe Hands Model with custom built
+              hand gesture recognition.</p>
+          </div>
         </div>
         <div
-          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Site under development ...
+          class="panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
+            002 - On-Device SMS
+            <p class="text-justify mt-3">Send an SMS by using your mobile device from your PHP, Node or any application
+              that can make an HTTP Request.</p>
+          </div>
         </div>
         <div
-          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Site under development ...
+          class="panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
+            003 - Trello Clone
+            <p class="text-justify mt-3">A Trello clone developed using Vue.JS for the front-end and Laravel for the
+              backend.</p>
+          </div>
         </div>
         <div
-          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Site under development ...
+          class="panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
+            004 - Car Rental
+            <p class="text-justify mt-3">A Car Rental developed using Vue.JS for the front-end and Laravel for the
+              backend.</p>
+          </div>
         </div>
         <div
-          class="cursor-grab panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] bg-gray-200 dark:bg-neutral-700 rounded-lg flex justify-center items-center">
-          Site under development ...
+          class="panel max-w-[480px] max-h-[28rem] w-[480px] h-[28rem] relative bg-gray-200 dark:bg-neutral-800 rounded-lg flex justify-center items-center">
+          <div class="absolute bottom-0 left-0 w-full p-5 rounded-b-lg">
+            005 - City Housing
+            <p class="text-justify mt-3">A Management Information System for City Housing developed using TALL Stack.</p>
+          </div>
         </div>
+        <div class="proxy"></div>
       </div>
+      <p class="mt-4 dark:text-gray-400 text-xs tracking-wider">← DRAG TO SCROLL →</p>
     </section>
 
     <section class="relative overflow-hidden mt-48 mb-32">
@@ -384,60 +410,59 @@
       <p id="subheading" class="text-2xl font-black mt-4 md:text-3xl md:max-w-2xl">
         TOOLS AND TECHSTACK THAT I’VE BEEN USING FOR THE PROJECTS
       </p>
-      <div class="relative flex flex-wrap gap-x-3 gap-y-8 mt-14 tag-cloud">
-        <p>SITE UNDER DEVELOPMENT ...</p>
-        <!-- <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/adobex.png" alt="" class="w-12 h-12">
-          <p class="font-bold text-lg">Adobe XD</p>
+      <div class="relative flex flex-wrap gap-y-12 mt-14 tag-cloud">
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/adobex.png" alt="" class="w-8 h-8 md:w-12 md:h-12">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Adobe XD</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/figmalogo.webp" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">Figma</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/figmalogo.webp" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Figma</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/laravellogo.png" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">Laravel</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/laravellogo.png" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Laravel</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/laravel-livewire.png" alt="" class="w-14 h-8">
-          <p class="font-bold text-lg">Livewire</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/laravel-livewire.png" alt="" class="w-10 h-4 md:w-14 md:h-8">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Livewire</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/GSAPlogo.webp" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">GSAP</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/GSAPlogo.webp" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">GSAP</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/htmllogo.png" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">HTML</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/htmllogo.png" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">HTML</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/csslogo.png" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">CSS</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/csslogo.png" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">CSS</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/photoshop.png" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">Photoshop</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/photoshop.png" alt="" class="w-9 h-9 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Photoshop</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/tailwindlogo.png" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">Tailwind</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/tailwindlogo.png" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Tailwind</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/vuejs logo.png" alt="" class="w-14 h-11">
-          <p class="font-bold text-lg">Vue.JS</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/vuejs logo.png" alt="" class="w-10 h-8 md:w-14 md:h-11">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Vue.JS</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/bootstrap.png" alt="" class="w-14 h-11">
-          <p class="font-bold text-lg">Bootstrap</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/bootstrap.png" alt="" class="w-10 h-8 md:w-14 md:h-11">
+          <p class="font-bold text-sm sm:text-md md:text-lg">Bootstrap</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/gitlogo.png" alt="" class="w-14 h-14">
-          <p class="font-bold text-lg">GIT</p>
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/gitlogo.png" alt="" class="w-10 h-10 md:w-14 md:h-14">
+          <p class="font-bold text-sm sm:text-md md:text-lg">GIT</p>
         </div>
-        <div class="rounded-[16px] p-6 flex items-center gap-x-3">
-          <img src="../assets/images/javascriptlogo.png" alt="" class="w-16 h-16">
-          <p class="font-bold text-lg">JavaScript</p>
-        </div> -->
+        <div class="flex items-center gap-x-3 col-4 sm:col-3">
+          <img src="../assets/images/javascriptlogo.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+          <p class="font-bold text-sm sm:text-md md:text-lg">JavaScript</p>
+        </div>
       </div>
     </section>
 
