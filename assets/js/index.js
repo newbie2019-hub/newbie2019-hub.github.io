@@ -24,7 +24,7 @@ bodyScrollBar = Scrollbar.init(select('#viewport'), {
 bodyScrollBar.addListener((s) => {
   currentScroll = s.offset.y
   let offset = s.offset.y * 0.5
-  document.getElementById("circular-text").style.transform = `rotate(${ offset }deg)`
+  // document.getElementById("circular-text").style.transform = `rotate(${ offset }deg)`
 
   gsap.to('#about-first', { x: (s.offset.y * 0.2) - 400 })
   gsap.to('#about-second', { x: ((s.offset.y * 0.2) * -1) })
@@ -195,8 +195,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('mousemove', function (e) {
     moveMouse(e)
   })
-
-  ScrollTrigger.refresh();
 
   select('#to-top').addEventListener('mouseenter', createCursorHover);
   select('#to-top').addEventListener('mouseleave', createCursorHover);

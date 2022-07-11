@@ -897,8 +897,20 @@ video {
   max-width: 28rem;
 }
 
-.max-w-\[480px\] {
-  max-width: 480px;
+.max-w-\[220px\] {
+  max-width: 220px;
+}
+
+.max-w-\[260px\] {
+  max-width: 260px;
+}
+
+.max-w-\[280px\] {
+  max-width: 280px;
+}
+
+.max-w-\[290px\] {
+  max-width: 290px;
 }
 
 .flex-1 {
@@ -975,6 +987,34 @@ video {
 .animate-swing {
   -webkit-animation: swing 7s cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite;
           animation: swing 7s cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-\[spin_4s_ease-in_infinite\] {
+  -webkit-animation: spin 4s ease-in infinite;
+          animation: spin 4s ease-in infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-\[spin_4s_linear_infinite\] {
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
 }
 
 .cursor-pointer {
@@ -1638,6 +1678,14 @@ body::-webkit-scrollbar {
     min-width: 246px;
   }
 
+  .sm\:max-w-\[320px\] {
+    max-width: 320px;
+  }
+
+  .sm\:max-w-\[330px\] {
+    max-width: 330px;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1712,6 +1760,10 @@ body::-webkit-scrollbar {
 
   .md\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .md\:max-w-\[480px\] {
+    max-width: 480px;
   }
 
   .md\:flex-row {
