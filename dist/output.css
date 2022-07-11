@@ -897,18 +897,6 @@ video {
   max-width: 28rem;
 }
 
-.max-w-\[220px\] {
-  max-width: 220px;
-}
-
-.max-w-\[260px\] {
-  max-width: 260px;
-}
-
-.max-w-\[280px\] {
-  max-width: 280px;
-}
-
 .max-w-\[290px\] {
   max-width: 290px;
 }
@@ -989,32 +977,29 @@ video {
           animation: swing 7s cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite;
 }
 
-@-webkit-keyframes spin {
-  to {
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes spin {
-  to {
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
     transform: rotate(360deg);
   }
 }
 
-.animate-\[spin_4s_ease-in_infinite\] {
-  -webkit-animation: spin 4s ease-in infinite;
-          animation: spin 4s ease-in infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-\[spin_4s_linear_infinite\] {
-  -webkit-animation: spin 4s linear infinite;
-          animation: spin 4s linear infinite;
+.animate-rotate {
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
 }
 
 .cursor-pointer {
@@ -1676,10 +1661,6 @@ body::-webkit-scrollbar {
 
   .sm\:min-w-\[246px\] {
     min-width: 246px;
-  }
-
-  .sm\:max-w-\[320px\] {
-    max-width: 320px;
   }
 
   .sm\:max-w-\[330px\] {

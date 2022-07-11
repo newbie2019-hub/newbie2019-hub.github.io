@@ -79,7 +79,13 @@ const execute = function executeCommand(input) {
 };
 
 const key = (e) => {
+  console.log(e)
   const input = userInput.innerHTML;
+
+  if (e.keyCode == 8) {
+    userInput.innerHTML = userInput.innerHTML.slice(0, userInput.innerHTML.length - 1);
+    return;
+  }
 
   if (e.key === "Enter" || e.key === 13) {
     execute(input);
@@ -87,7 +93,6 @@ const key = (e) => {
     userInput.focus()
     return;
   }
-
   userInput.innerHTML = input + e.key;
 };
 
@@ -126,5 +131,9 @@ const up = (e) => {
 document.addEventListener("keydown", up);
 
 document.addEventListener("keydown", backspace);
-document.addEventListener("keypress", key);
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  document.addEventListener("keydown", key);
+} else {
+  document.addEventListener("keypress", key);
+}
 document.addEventListener("DOMContentLoaded", app);

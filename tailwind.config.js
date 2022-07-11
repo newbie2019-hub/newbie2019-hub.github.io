@@ -6,7 +6,7 @@ module.exports = {
       animation: {
         'swing': 'swing 7s cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite',
         'float': 'float 4s ease-in-out infinite',
-        'rotate': 'rotate 4s ease-in-out infinite',
+        'rotate': 'rotate 5s linear infinite',
       },
       keyframes: {
         swing: {
@@ -23,7 +23,7 @@ module.exports = {
           },
          
           '100%': {
-            transform: 'rotate(360px)'
+            transform: 'rotate(360deg)'
           }
         },
         float: {
