@@ -18,7 +18,7 @@ timeline_navigation.fromTo(".li", { y: "-100%", opacity: 0 }, { duration: .5, op
 timeline_navigation.fromTo(".right-side", { opacity: 0 }, { duration: 1, opacity: 1, stagger: { amount: 1 }, ease: Expo.easeOut }, "-=0.4");
 
 bodyScrollBar = Scrollbar.init(select('#viewport'), {
-  damping: 0.1, delegateTo: document, renderByPixel: true
+  damping: 0.1
 });
 
 bodyScrollBar.addListener((s) => {
@@ -211,8 +211,8 @@ gsap.utils.toArray('#heading').forEach((div, index) => {
     scrollTrigger: {
       trigger: div,
       start: "top bottom",
-      end: "top center",
-      scrub: 1,
+      // end: "top center",
+      // scrub: 1,
     }
   })
 });
@@ -224,8 +224,8 @@ gsap.utils.toArray('#subheading').forEach((div, index) => {
     scrollTrigger: {
       trigger: div,
       start: "top bottom",
-      end: "top 10%",
-      scrub: 1
+      // end: "top 10%",
+      // scrub: 1
     }
   }, .5)
 });
@@ -233,26 +233,24 @@ gsap.utils.toArray('#subheading').forEach((div, index) => {
 gsap.from('.card-work', {
   x: -20,
   opacity: 0,
-  duration: 2,
+  duration: 1,
   ease: Power3.easeInOut,
   scrollTrigger: {
     trigger: 'div.card-work',
     start: 'top bottom',
-    end: 'top center',
-    scrub: 4
+    // end: 'top center',
+    // scrub: 1
   },
-  stagger: { each: .5 }
+  stagger: { amount: 1 }
 })
 
 let sections = document.querySelectorAll(".panel");
 let scrollContainer = document.querySelector(".horizontal-scrolling");
 let scrollTween;
-ScrollTrigger.matchMedia({
 
+ScrollTrigger.matchMedia({
   // sm
   "(max-width: 768px)": function () {
-    // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
-    // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
     scrollTween = gsap.to(sections, {
       xPercent: -110 * (sections.length - 1),
       ease: "none",
@@ -261,8 +259,6 @@ ScrollTrigger.matchMedia({
   },
   // md
   "(min-width: 768px)": function () {
-    // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
-    // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
     scrollTween = gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
@@ -271,8 +267,6 @@ ScrollTrigger.matchMedia({
   },
   // desktop - lg
   "(min-width: 1024px)": function () {
-    // setup animations and ScrollTriggers for screens over 800px wide (desktop) here...
-    // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
     scrollTween = gsap.to(sections, {
       xPercent: -80 * (sections.length - 1),
       ease: "none",
