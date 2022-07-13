@@ -8,7 +8,7 @@ const circleType = new CircleType(document.getElementById('rotated'))
 const select = (e) => document.querySelector(e);
 
 const navLinks = gsap.utils.toArray('nav ul li a')
-const projectCards = gsap.utils.toArray('.panel')
+const projectCards = gsap.utils.toArray('.project-card')
 const btnNavigation = gsap.utils.toArray('.btn-navigation')
 
 
@@ -130,8 +130,11 @@ function moveMouse(e) {
 
 function smoothScrollTo(e) {
   e.preventDefault();
-  const scroll = select(e.target.getAttribute("href")).offsetTop
-  gsap.to(bodyScrollBar, { duration: 2, scrollTo: scroll });
+  let scroll = select(e.target.getAttribute("href")).offsetTop
+  if (e.target.getAttribute("href") !== '#footer') {
+    scroll = scroll - 100
+  }
+  gsap.to(bodyScrollBar, { duration: 1.5, scrollTo: scroll });
 }
 
 function createCursorHover(e) {
@@ -186,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
   navLinks.forEach(link => {
     link.addEventListener('mouseenter', createCursorHover);
     link.addEventListener('mouseleave', createCursorHover);
+    link.addEventListener('click', smoothScrollTo);
   });
 
   projectCards.forEach(link => {
@@ -248,120 +252,51 @@ gsap.from('.card-work', {
   stagger: { amount: 1 }
 })
 
-let sections = document.querySelectorAll(".panel");
-let scrollContainer = document.querySelector(".horizontal-scrolling");
-let scrollTween, progress = 0;
-
-ScrollTrigger.matchMedia({
-  // sm
-  "(max-width: 768px)": function () {
-    scrollTween = gsap.to(sections, {
-      xPercent: -110 * (sections.length - 1),
-      ease: "none",
-      paused: true
-    });
-  },
-  // md
-  "(min-width: 768px)": function () {
-    scrollTween = gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      paused: true
-    });
-  },
-  // desktop - lg
-  "(min-width: 1024px)": function () {
-    scrollTween = gsap.to(sections, {
-      xPercent: -80 * (sections.length - 1),
-      ease: "none",
-      paused: true
-    });
-  },
-});
 
 
-Draggable.create(".proxy", {
-  trigger: scrollContainer,
-  type: "x",
-  onDrag() {
-    circle.classList.add('mouse-dragging')
-    circle.classList.remove('mix-blend-exclusion')
-    circle.classList.remove('mouse-interaction')
-    arrow.classList.remove('opacity-0')
-    progress = ((this.x * -1) - 0) / ((480 - (sections.length - 1)) - 0) * 1
-    scrollTween.progress(progress)
-  },
-  onClick() {
+/**
+ *  Navigation bar animation
+ *  scrolling
+ * 
+ */
 
-  },
-  onDragEnd: function () {
-    circle.classList.add('mix-blend-exclusion')
-    circle.classList.remove('mouse-dragging')
-    circle.classList.add('mouse-interaction')
-    arrow.classList.add('opacity-0')
-    if (progress > 1) {
-      progress = 1
-    }
-    if (progress < 0) {
-      progress = 0
-    }
-    console.log(progress)
-  }
-});
+function navbarScroll() {
+  ScrollTrigger.matchMedia({
+    //sm
+    "(min-width: 768px)": function () {
+      const showAnim = gsap.from('nav ul li', {
+        opacity: 0,
+        y: -20,
+        paused: true,
+        duration: .35,
+        stagger: .15,
+        ease: Power3.easeInOut
+      }).progress(1);
 
-// const prevCard = () => {
-//   if (progress != 1) {
-//     scrollTween.progress(progress + .25)
-//     progress = progress + .25
-//   } else {
-//     scrollTween.progress(progress - .25)
-//     progress = progress - .25
-//   }
-// }
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: '.pin-section',
+          start: 'top center',
+          endTrigger: '#project-5',
+          end: 'center center',
+          pin: true,
+          pinReparent: true
+        }
+      })
 
-// const nextCard = () => {
-//   if (progress == 1 || progress < 0) return
-//   scrollTween.progress(progress + .25)
-//   progress = progress + .25
+      ScrollTrigger.create({
+        start: "top top",
+        end: 4000,
+        invalidateOnRefresh: true,
+        onUpdate: (self) => {
+          self.direction === -1 ? showAnim.play() : showAnim.reverse()
+        }
+      });
+    },
+  })
+}
 
-// }
-
-// /**
-//  *  Pin parent content of 
-//  *  fake horizontal scrolling
-//  *  - replaced with drag scroll
-//  *  
-//  */
-// let sections = gsap.utils.toArray(".panel");
-
-// gsap.to('#projects', {
-//   scrollTrigger: {
-//     trigger: "#projects",
-//     start: 'top top',
-//     pin: 'section #projects',
-//     markers: false,
-//     scrub: 1,
-
-//   }
-// });
-
-// gsap.to(sections, {
-//   xPercent: -70 * (sections.length - 1),
-//   ease: "none",
-//   scrollTrigger: {
-//     trigger: "#projects",
-//     start: 'center center',
-//     pin: true,
-//     pinReparent: true,
-//     markers: false,
-//     scrub: 1,
-//     end: function () {
-//       return `+=${ 480 * (sections.length - 1) }`
-//     },
-//   }
-// });
-
-
+navbarScroll()
 
 /**
  *  Scroll to top button
