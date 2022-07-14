@@ -708,8 +708,12 @@ video {
   left: 1rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.right-0 {
+  right: 0px;
+}
+
+.right-4 {
+  right: 1rem;
 }
 
 .z-20 {
@@ -769,6 +773,10 @@ video {
   margin-top: 6rem;
 }
 
+.-mt-14 {
+  margin-top: -3.5rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -779,6 +787,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.-mt-8 {
+  margin-top: -2rem;
 }
 
 .inline {
@@ -1091,18 +1103,14 @@ video {
   border-radius: 16px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-}
-
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 
 .border-2 {
@@ -1140,6 +1148,40 @@ video {
 
 .bg-slate-200\/80 {
   background-color: rgb(226 232 240 / 0.8);
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-slate-200\/50 {
+  background-color: rgb(226 232 240 / 0.5);
+}
+
+.bg-neutral-400\/50 {
+  background-color: rgb(163 163 163 / 0.5);
+}
+
+.bg-neutral-600\/60 {
+  background-color: rgb(82 82 82 / 0.6);
+}
+
+.bg-neutral-200\/60 {
+  background-color: rgb(229 229 229 / 0.6);
+}
+
+.bg-blue-400\/60 {
+  background-color: rgb(96 165 250 / 0.6);
+}
+
+.bg-blue-200\/60 {
+  background-color: rgb(191 219 254 / 0.6);
 }
 
 .bg-gradient-to-t {
@@ -1182,6 +1224,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-slate-600 {
+  --tw-gradient-from: #475569;
+  --tw-gradient-to: rgb(71 85 105 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-slate-200 {
+  --tw-gradient-from: #e2e8f0;
+  --tw-gradient-to: rgb(226 232 240 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-blue-400 {
   --tw-gradient-to: #60a5fa;
 }
@@ -1204,6 +1258,14 @@ video {
 
 .to-green-400 {
   --tw-gradient-to: #4ade80;
+}
+
+.to-slate-800 {
+  --tw-gradient-to: #1e293b;
+}
+
+.to-slate-600 {
+  --tw-gradient-to: #475569;
 }
 
 .fill-white {
@@ -1575,6 +1637,14 @@ body::-webkit-scrollbar {
   to {
     transform: rotate(360deg);
   }
+}
+
+.hover\:-mt-8:hover {
+  margin-top: -2rem;
+}
+
+.hover\:-mt-7:hover {
+  margin-top: -1.75rem;
 }
 
 .hover\:translate-x-2:hover {

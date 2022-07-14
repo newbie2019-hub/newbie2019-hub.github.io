@@ -277,7 +277,7 @@ function navbarScroll() {
         scrollTrigger: {
           trigger: '.pin-section',
           start: 'top center',
-          endTrigger: '#project-5',
+          endTrigger: '#project-6',
           end: 'center center',
           pin: true,
           pinReparent: true
