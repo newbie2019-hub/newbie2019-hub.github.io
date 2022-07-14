@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link href="/dist/main.css" rel="stylesheet">
-  <link href="/dist/spotlight.min.css" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
   <title>Yvan Sabay - Full Stack Web Developer</title>
 </head>
@@ -75,13 +74,13 @@
       <div class="flex h-full items-center justify-center gap-x-24">
         <ul class="ul">
           <li class="li"><a href="#home" class="navlink">Home</a></li>
-          <li class="li"><a href="#whitepaper" class="navlink">About</a></li>
-          <li class="li"><a href="#contact" class="navlink">Projects</a></li>
-          <li class="li"><a href="" target="_" class="navlink">Skills</a></li>
+          <li class="li"><a href="#work" class="navlink">About</a></li>
+          <li class="li"><a href="#projects" class="navlink">Projects</a></li>
+          <li class="li"><a href="#techstack" target="_" class="navlink">Skills</a></li>
           <div class="mt-4 social sm:flex lg:hidden gap-x-6">
-            <a href="" target="_" class=" ">Github</a>
-            <a href="" target="_" class=" ">Instagram</a>
-            <a href="" target="_" class="">Facebook</a>
+            <a href="https://github.com/newbie2019-hub" target="_" class=" ">Github</a>
+            <a href="https://www.instagram.com/sabay.yvan" target="_" class=" ">Instagram</a>
+            <a href="https://www.facebook.com/sabay.yvan/ " target="_" class="">Facebook</a>
           </div>
         </ul>
         <div class="right-side hidden lg:flex flex-col">
@@ -368,14 +367,10 @@
         </div>
         <div class="w-full md:w-1/2 horizontal-scrolling relative">
           <div class="relative project-card mt-8 md:mt-0">
-            <a class="spotlight" data-media="video" data-src-mp4="../assets/videos/touchless-final.mp4"
-              data-poster="../assets/images/projects/touchless/2.png" data-autoplay="true" data-muted="false"
-              data-preload="true" data-controls="true" data-inline="false">
-              <img src="../assets/images/projects/touchless/2.png" class="rounded-t-lg md:rounded-lg">
-            </a>
-            <!-- <img src="../assets/images/projects/touchless/2.png" alt="" class="rounded-t-lg md:rounded-lg"> -->
-            <div
-              class="md:absolute relative md:bottom-0 md:left-0 p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
+            <video poster="../assets/images/projects/touchless/2.png" preload controls playsinline="false">
+              <source src="../assets/videos/touchless-final.mp4" type="video/mp4">
+            </video>
+            <div class="relative p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
               <a href="https://github.com/newbie2019-hub/capstone-kiosk" target="_"
                 class="hover:-mt-6 duration-200 ease-in-out absolute top-0 right-16 -mt-4 rounded-full bg-white shadow-md items-center justify-center p-2">
                 <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -398,14 +393,14 @@
               <p class="text-lg font-medium">
                 001 - Touchless Information Kiosk
               </p>
-              <p class="text-justify mt-3">A touchless interactive kiosk using MediaPipe Hands Model with custom
-                built
-                hand gesture recognition.</p>
+              <p class="text-justify mt-3">A project built for our capstone project. This is an interactive touchless
+                kiosk using MediaPipe Hands Model with custom built hand gesture recognition for the navigation of the
+                system.</p>
             </div>
           </div>
           <div class="relative project-card mt-12 md:mt-18">
-            <img src="../assets/images/projects/sms/1.jpg" alt="" class="rounded-t-lg md:rounded-lg">
-            <div class="md:absolute md:bottom-0 md:left-0 p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
+            <img src="../assets/images/projects/sms/1.jpg" alt="" class="rounded-t-lg">
+            <div class="relative p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
               <a href="https://github.com/newbie2019-hub/cordova-ondevice-sms-local-api" target="_"
                 class="hover:-mt-6 duration-200 ease-in-out absolute top-0 right-4 -mt-4 rounded-full bg-white shadow-md items-center justify-center p-2">
                 <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -422,9 +417,10 @@
             </div>
           </div>
           <div class="relative project-card mt-12 md:mt-18">
-            <img src="../assets/images/projects/trelloclone/4.png" alt=""
-              class="brightness-[60%] rounded-t-lg md:rounded-lg">
-            <div class="md:absolute md:bottom-0 md:left-0 p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
+            <video poster="../assets/images/projects/trelloclone/4.png" preload controls playsinline="false">
+              <source src="../assets/videos/trelloclone.mp4" type="video/mp4">
+            </video>
+            <div class="relative p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
               <a href="https://github.com/newbie2019-hub/evsu-trello-clone" target="_"
                 class="hover:-mt-6 duration-200 ease-in-out absolute top-0 right-4 -mt-4 rounded-full bg-white shadow-md items-center justify-center p-2">
                 <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -442,10 +438,10 @@
             </div>
           </div>
           <div class="relative project-card mt-12 md:mt-18">
-            <img src="../assets/images/projects/carrental/1.png" alt=""
-              class="brightness-[60%] rounded-t-lg md:rounded-lg">
-            <div
-              class="relative md:absolute md:bottom-0 md:left-0 p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
+            <video poster="../assets/images/projects/carrental/1.png" preload controls playsinline="false">
+              <source src="../assets/videos/carrental.mp4" type="video/mp4">
+            </video>
+            <div class="relative p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
               <a href="https://github.com/newbie2019-hub/carrental-aclc-full" target="_"
                 class="hover:-mt-6 duration-200 ease-in-out absolute top-0 right-16 -mt-4 rounded-full bg-white shadow-md items-center justify-center p-2">
                 <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -474,10 +470,8 @@
             </div>
           </div>
           <div id="project-5" class="relative project-card mt-12 md:mt-18">
-            <img src="../assets/images/projects/cityhousing/4.png" alt=""
-              class="brightness-[60%] rounded-t-lg md:rounded-lg">
-            <div
-              class="relative md:absolute md:bottom-0 md:left-0 p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
+            <img src="../assets/images/projects/cityhousing/4.png" alt="" class="brightness-[60%] rounded-t-lg">
+            <div class="relative p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
               <a href="https://www.figma.com/file/4SZeWnks1UeKDvwuYGiYDz/CityHousing" target="_"
                 class="hover:-mt-6 duration-200 ease-in-out absolute top-0 right-4 -mt-4 rounded-full bg-white shadow-md items-center justify-center p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px">
@@ -498,10 +492,8 @@
             </div>
           </div>
           <div id="project-6" class="relative project-card mt-12 md:mt-18">
-            <img src="../assets/images/projects/portfolio/1.png" alt=""
-              class="brightness-[60%] rounded-t-lg md:rounded-lg">
-            <div
-              class="relative md:absolute md:bottom-0 md:left-0 p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
+            <img src="../assets/images/projects/portfolio/1.png" alt="" class="brightness-[60%] rounded-t-lg">
+            <div class="relative p-5 rounded-b-lg w-full bg-slate-200/80 dark:bg-gray-700/60">
               <a href="https://www.figma.com/file/VBqINnqV6NnjbLwqaCEZGN/PORTFOLIO---FINAL?node-id=0%3A1" target="_"
                 class="hover:-mt-6 duration-200 ease-in-out absolute top-0 right-4 -mt-4 rounded-full bg-white shadow-md items-center justify-center p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px">
@@ -657,7 +649,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
   <script src="../assets/js/circletype.min.js"></script>
-  <script src="../assets/js/spotlight.min.js"></script>
   <script src="../assets/js/terminal.js"></script>
   <script src="../assets/js/index.js"></script>
 </body>
