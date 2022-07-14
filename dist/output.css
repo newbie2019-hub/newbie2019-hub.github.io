@@ -761,6 +761,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -775,10 +779,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .inline {
@@ -1100,6 +1100,11 @@ video {
   border-bottom-left-radius: 0.5rem;
 }
 
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1335,11 +1340,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1672,10 +1672,6 @@ body::-webkit-scrollbar {
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-gray-400\/60 {
-  background-color: rgb(156 163 175 / 0.6);
-}
-
 .dark .dark\:bg-gray-700\/60 {
   background-color: rgb(55 65 81 / 0.6);
 }
@@ -1770,6 +1766,10 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:bottom-0 {
     bottom: 0px;
   }
@@ -1784,14 +1784,6 @@ body::-webkit-scrollbar {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:mt-24 {
-    margin-top: 6rem;
-  }
-
-  .md\:mt-20 {
-    margin-top: 5rem;
   }
 
   .md\:inline-block {
@@ -1864,6 +1856,10 @@ body::-webkit-scrollbar {
 
   .md\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .md\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .md\:px-10 {
