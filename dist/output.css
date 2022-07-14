@@ -708,12 +708,20 @@ video {
   left: 1rem;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .right-4 {
   right: 1rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.right-14 {
+  right: 3.5rem;
 }
 
 .z-20 {
@@ -773,10 +781,6 @@ video {
   margin-top: 6rem;
 }
 
-.-mt-14 {
-  margin-top: -3.5rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -789,8 +793,8 @@ video {
   margin-top: 0.5rem;
 }
 
-.-mt-8 {
-  margin-top: -2rem;
+.-mt-4 {
+  margin-top: -1rem;
 }
 
 .inline {
@@ -1150,40 +1154,6 @@ video {
   background-color: rgb(226 232 240 / 0.8);
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-slate-200\/50 {
-  background-color: rgb(226 232 240 / 0.5);
-}
-
-.bg-neutral-400\/50 {
-  background-color: rgb(163 163 163 / 0.5);
-}
-
-.bg-neutral-600\/60 {
-  background-color: rgb(82 82 82 / 0.6);
-}
-
-.bg-neutral-200\/60 {
-  background-color: rgb(229 229 229 / 0.6);
-}
-
-.bg-blue-400\/60 {
-  background-color: rgb(96 165 250 / 0.6);
-}
-
-.bg-blue-200\/60 {
-  background-color: rgb(191 219 254 / 0.6);
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1224,18 +1194,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-slate-600 {
-  --tw-gradient-from: #475569;
-  --tw-gradient-to: rgb(71 85 105 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-slate-200 {
-  --tw-gradient-from: #e2e8f0;
-  --tw-gradient-to: rgb(226 232 240 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-blue-400 {
   --tw-gradient-to: #60a5fa;
 }
@@ -1260,14 +1218,6 @@ video {
   --tw-gradient-to: #4ade80;
 }
 
-.to-slate-800 {
-  --tw-gradient-to: #1e293b;
-}
-
-.to-slate-600 {
-  --tw-gradient-to: #475569;
-}
-
 .fill-white {
   fill: #fff;
 }
@@ -1286,6 +1236,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-6 {
@@ -1639,12 +1593,12 @@ body::-webkit-scrollbar {
   }
 }
 
-.hover\:-mt-8:hover {
-  margin-top: -2rem;
-}
-
 .hover\:-mt-7:hover {
   margin-top: -1.75rem;
+}
+
+.hover\:-mt-6:hover {
+  margin-top: -1.5rem;
 }
 
 .hover\:translate-x-2:hover {
