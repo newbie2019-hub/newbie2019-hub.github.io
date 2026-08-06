@@ -1,0 +1,102 @@
+1:"$Sreact.fragment"
+3:I[86686,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],""]
+4:I[86402,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+5:I[20032,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+6:I[27059,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+7:I[84834,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+8:I[68223,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+9:I[16317,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+b:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"ViewportBoundary"]
+11:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"MetadataBoundary"]
+13:I[40917,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default",1]
+:HL["/_next/static/chunks/2tv2x_0vnraxh.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+2:["$","iframe",null,{"src":"https://www.googletagmanager.com/ns.html?id=GTM-KB5L5KQZ","height":"0","width":"0","style":{"display":"none","visibility":"hidden"}}]
+e:X
+0:{"P":null,"c":["","blog","setting-up-laravel-session",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","setting-up-laravel-session","d",[]],{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2tv2x_0vnraxh.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3zktz-1ygh6sy.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0e1nf9bd063h0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/3oj3qkt-rkhm1.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable instrument_serif_3e32f36-module__-w2TMq__variable antialiased","children":[["$","noscript",null,{"children":"$2"}],["$","$L3",null,{"id":"gtm","strategy":"afterInteractive","children":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-KB5L5KQZ');"}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$La",null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],{},null,false,null]},null,false,"$e"]},null,false,"$e"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$c",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2tv2x_0vnraxh.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"_fkvCzjeLsc3ZtYjVptdp"}
+14:I[25979,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],""]
+e:C
+15:T173c,<h3>Session-based Authentication in Laravel</h3>
+<p><strong>What is session-based authentication?</strong></p>
+<p>Session-based authentication is created on the server for each user after they login. The server then sends a unique session identifier for the client side to store which is usually stored in the cookie. This cookie is used for subsequent requests to authenticate the user.</p>
+<p><strong>What is a cookie?</strong></p>
+<p>It is a small piece of data that a web sever sends to a user&#39;s web browser which is then stored and is sent back with every subsequent request to the same server. Think of it as a way for websites to remember users across different sessions.</p>
+<h3>Setting up Session-based Authentication in Laravel</h3>
+<p>Setting up API Authentication in Laravel is simple since they already have the starter kits. You can also check their <a href="https://laravel.com/docs/11.x/starter-kits#breeze-and-next">documentation</a> for more information.</p>
+<p><strong>SPA Authentication</strong></p>
+<p>This is from their documentation. You can read more from <a href="https://laravel.com/docs/11.x/sanctum#spa-authentication">here</a></p>
+<blockquote>
+<p>For this feature, Sanctum does not use tokens of any kind. Instead, Sanctum uses Laravel&#39;s built-in cookie based session authentication services. This approach to authentication provides the benefits of CSRF protection, session authentication, as well as protects against leakage of the authentication credentials via XSS.</p>
+</blockquote>
+<blockquote>
+<p>In order to authenticate, your SPA and API must share the same top-level domain. However, they may be placed on different subdomains. Additionally, you should ensure that you send the <code>Accept: application/json</code> header and either the <code>Referer</code> or <code>Origin</code> header with your request.</p>
+</blockquote>
+<h4>Steps:</h4>
+<ol>
+<li>Run the <code>php artisan breeze:install</code> command and select the API stack as the desired stack.</li>
+<li>Run the <code>php artisan migrate</code> to run the newly created migrations.</li>
+<li>Ensure this environmental variables exist in your <code>.env</code> file</li>
+</ol>
+<pre><code class="language-php">FRONTEND_URL= //Add your frontend url
+SESSION_DOMAIN=.localhost //with a dot before the localhost
+SANCTUM_STATEFUL_DOMAINS= //.localhost
+</code></pre>
+<ol start="5">
+<li>Verify if the routes are now available using <code>php artisan route:list</code> or <code>php artisan r:l</code>. This will list all available route for your application. Check if there are routes for <code>sanctum/csrf-cookie</code>, <code>login</code>, <code>register</code>, <code>forgot password</code>.</li>
+<li>If routes do exist then you&#39;re done setting up your laravel api. That&#39;s all you need to have a working api authentication.</li>
+</ol>
+<p><strong>Connecting your React or any SPA</strong></p>
+<p>You can now use react, vue or any SPA that you like. Now, when making a request using axios or any fetching library ensure to add the following configuration or any equivalent.</p>
+<pre><code class="language-js">axios.defaults.withCredentials = true;
+axios.defaults.withXSRFToken = true;
+</code></pre>
+<p>What this does is it will automatically handle the cookie whenever you send a request to your api application. Most likely if ever you use axios you&#39;ll have a setup like this.</p>
+<pre><code class="language-js">import axios form &#39;axios&#39;;
+
+export const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
+  withCredentials: true,
+  withXSRFToken: true,
+})
+</code></pre>
+<p>To begin authenticating a user, you can start by creating a basic login form. Before sending a POST request to the /login endpoint, you must first make a GET request to the sanctum/csrf-cookie route. Once the sanctum/csrf-cookie request is complete, you can proceed with authenticating the user via the /login endpoint. Typically, your auth functions would look like:</p>
+<pre><code class="language-ts">// Make this request first then afterwards the login
+const getCSRFToken = async () =&gt; {
+	await api.get(&#39;sanctum/csrf-cookie&#39;, {
+	  baseURL: import.meta.env.VITE_API_WEB_URL
+	})
+}
+
+const login = async (form: UserLogin) =&gt; {
+	const { status, data } = await api.post(&#39;login&#39;, form,
+	  { baseURL: import.meta.env.VITE_API_WEB_URL }
+	)
+	// Handle the response
+}
+
+// Register Fn
+
+// Logout
+const logout = async () =&gt; {
+	const { status } = await api.post(&#39;logout&#39;, null, {
+	  baseURL: import.meta.env.VITE_API_WEB_URL
+	})
+
+	// Handle the logout
+}
+</code></pre>
+<h3>Pre-flight</h3>
+<p>You&#39;ll most likely see a preflight request before any api request you do this is automatically done by the browser. You can check more about it [here](A CORS preflight request is a <a href="https://developer.mozilla.org/en-US/docs/Glossary/CORS">CORS</a> request that checks to see if the CORS protocol is understood and a server is aware using specific methods and headers.)</p>
+<p>You can cache for a certain amount of time so that preflight wont be sent for every request you make. Open the <code>cors.php</code> file in your laravel application and update the &#39;max_age&#39; configuration. Now whenever you make a request a preflight will be sent once only for every api endpoint and not for every request sent to the api endpoint.</p>
+<blockquote>
+<p>The preflight response can be optionally cached for the requests created in the same <a href="https://developer.mozilla.org/en-US/docs/Glossary/URL">URL</a> using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age"><code>Access-Control-Max-Age</code></a> header like in the above example. To cache preflight responses, the browser uses a specific cache that is separate from the general HTTP cache that the browser manages. Preflight responses are never cached in the browser&#39;s general HTTP cache.</p>
+</blockquote>
+a:["$","main",null,{"className":"shell py-16 md:py-24","children":["$","div",null,{"className":"mx-auto max-w-[82ch]","children":[["$","$L14",null,{"href":"/blog","className":"font-mono text-eyebrow uppercase text-muted transition-colors hover:text-accent","children":"← All posts"}],["$","article",null,{"className":"mt-12","children":[["$","header",null,{"className":"border-b border-line pb-10","children":[["$","h1",null,{"className":"font-display text-h2","children":"Laravel Session"}],["$","p",null,{"className":"mt-6 max-w-[60ch] text-body text-muted","children":"Learn how to setup laravel session instead of a token-based authentication that works for api as well"}],["$","p",null,{"className":"mt-8 font-mono text-eyebrow uppercase text-muted","children":["November 20, 2024"," — ",4," min read"," — session · laravel · php · authentication"]}]]}],["$","div",null,{"className":"prose prose-invert mt-12 max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-accent prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:border-line prose-pre:bg-surface","dangerouslySetInnerHTML":{"__html":"$15"}}]]}]]}]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+16:I[82886,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"IconMark"]
+d:null
+12:[["$","title","0",{"children":"Laravel Session — Yvan Sabay"}],["$","meta","1",{"name":"description","content":"Learn how to setup laravel session instead of a token-based authentication that works for api as well"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L16","3",{}]]

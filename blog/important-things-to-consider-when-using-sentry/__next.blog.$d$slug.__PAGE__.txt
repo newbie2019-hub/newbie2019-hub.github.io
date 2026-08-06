@@ -1,0 +1,63 @@
+1:"$Sreact.fragment"
+2:I[25979,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],""]
+4:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"ViewportBoundary"]
+3:T81a,<h4>Sentry for Error Logging</h4>
+<p>Have you ever wondered how large applications can instantly detect errors and address them right away? This is where third-party error logging tools, like Sentry, come into play. Sentry is incredibly useful for developers, as it allows us to catch errors before users even report them—if they report them at all (let’s be honest, most users won’t). Instead, they might just abandon the app and switch to a similar one.</p>
+<p>If you’re not familiar with Sentry, here’s how they describe themselves. You can also go to their docs for more information.</p>
+<blockquote>
+<p>Sentry provides end-to-end distributed tracing, enabling developers to identify and debug performance issues and errors across their systems and services.</p>
+</blockquote>
+<p>I won’t be covering the setup process for Sentry since it’s thoroughly documented on their website. Instead, this serves as a personal reference to document and track the key steps I need to follow in case I need to use it again in the future.</p>
+<p>When using Sentry, you can track user information in addition to logging errors. Here’s what you need to know and how to set it up.</p>
+<p><a href="https://docs.sentry.io/platforms/javascript/guides/vue/enriching-events/identify-user/">Identifying User</a></p>
+<pre><code class="language-js">//id, username, email, ip_address
+Sentry.setUser({ email: &quot;john.doe@example.com&quot; });
+
+// Additionally, you can provide arbitrary key/value pairs beyond the reserved names, and the Sentry SDK will store those with the user.
+Sentry.setUser({
+	user_id: user.id,
+	email: user.email,
+	role: user.attributes.account_role,
+})
+</code></pre>
+<p><a href="https://docs.sentry.io/platforms/javascript/guides/vue/configuration/environments/">Identifying Environment</a></p>
+<pre><code class="language-js">Sentry.init({ environment: &quot;production&quot; });
+
+// or you can check from the env if its running on what environment
+Sentry.init({
+	dsn: import.meta.env.VITE_SENTRY_DSN,
+	environment: import.meta.env.MODE
+});
+</code></pre>
+8:X
+f:X
+f:C
+0:{"buildId":"_fkvCzjeLsc3ZtYjVptdp","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"shell py-16 md:py-24","children":["$","div",null,{"className":"mx-auto max-w-[82ch]","children":[["$","$L2",null,{"href":"/blog","className":"font-mono text-eyebrow uppercase text-muted transition-colors hover:text-accent","children":"← All posts"}],["$","article",null,{"className":"mt-12","children":[["$","header",null,{"className":"border-b border-line pb-10","children":[["$","h1",null,{"className":"font-display text-h2","children":"Get ahead of errors with Sentry"}],["$","p",null,{"className":"mt-6 max-w-[60ch] text-body text-muted","children":"Sentry is a really popular third-party library for error logging"}],["$","p",null,{"className":"mt-8 font-mono text-eyebrow uppercase text-muted","children":["December 12, 2024"," — ",2," min read"," — sentry · vue · react · typescript"]}]]}],["$","div",null,{"className":"prose prose-invert mt-12 max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-accent prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:border-line prose-pre:bg-surface","dangerouslySetInnerHTML":{"__html":"$3"}}]]}]]}]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],"$La","$Lb"]}],"isPartial":"$@c","staleTime":"$8","varyParams":null},{"rsc":"$Ld","isPartial":"$@e","staleTime":"$8","varyParams":"$f"},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":"$f"},{"rsc":"$L12","isPartial":"$@13","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+16:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"MetadataBoundary"]
+17:I[82886,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"IconMark"]
+18:I[68223,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+19:I[16317,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+1b:I[86686,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],""]
+1c:I[86402,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+1d:I[20032,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+1e:I[27059,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+1f:I[84834,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/0e1nf9bd063h0.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default"]
+:HL["/_next/static/chunks/2tv2x_0vnraxh.css","style"]
+6:null
+a:["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Get ahead of errors with Sentry — Yvan Sabay"}],["$","meta","1",{"name":"description","content":"Sentry is a really popular third-party library for error logging"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L17","3",{}]]}]}]}]
+b:["$","meta",null,{"name":"next-size-adjust","content":""}]
+d:["$","$1","c",{"children":[null,["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}]}]]}]
+10:["$","$1","c",{"children":[null,["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}]}]]}]
+1a:["$","iframe",null,{"src":"https://www.googletagmanager.com/ns.html?id=GTM-KB5L5KQZ","height":"0","width":"0","style":{"display":"none","visibility":"hidden"}}]
+12:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2tv2x_0vnraxh.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3zktz-1ygh6sy.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0e1nf9bd063h0.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/3oj3qkt-rkhm1.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable instrument_serif_3e32f36-module__-w2TMq__variable antialiased","children":[["$","noscript",null,{"children":"$1a"}],["$","$L1b",null,{"id":"gtm","strategy":"afterInteractive","children":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-KB5L5KQZ');"}],["$","$L1c",null,{}],["$","$L1d",null,{}],["$","$L1e",null,{}],["$","$L1f",null,{}],["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]]}]}]]}]
+8:300
+15:true
+8:C
+14:0
+c:"$undefined"
+e:"$undefined"
+11:"$undefined"
+13:"$undefined"
+7:"$undefined"
