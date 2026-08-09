@@ -11,63 +11,240 @@ c:"$Sreact.suspense"
 f:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/27akwgpk7chpx.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"ViewportBoundary"]
 11:I[26266,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/27akwgpk7chpx.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"MetadataBoundary"]
 13:I[40917,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/27akwgpk7chpx.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"default",1]
-:HL["/_next/static/chunks/2tv2x_0vnraxh.css","style"]
+:HL["/_next/static/chunks/388azwm8vmyry.css","style"]
 :HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:["$","iframe",null,{"src":"https://www.googletagmanager.com/ns.html?id=GTM-KB5L5KQZ","height":"0","width":"0","style":{"display":"none","visibility":"hidden"}}]
 e:X
-0:{"P":null,"c":["","blog","my-development-workflow",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","my-development-workflow","d",[]],{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2tv2x_0vnraxh.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3zktz-1ygh6sy.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/27akwgpk7chpx.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/3oj3qkt-rkhm1.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable instrument_serif_3e32f36-module__-w2TMq__variable antialiased","children":[["$","noscript",null,{"children":"$2"}],["$","$L3",null,{"id":"gtm","strategy":"afterInteractive","children":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-KB5L5KQZ');"}],["$","$L3",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-B13KR0C9W4","strategy":"afterInteractive"}],["$","$L3",null,{"id":"ga4","strategy":"afterInteractive","children":"window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-B13KR0C9W4');"}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$La",null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],{},null,false,null]},null,false,"$e"]},null,false,"$e"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$c",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2tv2x_0vnraxh.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"Hi0_4nDg5TvHAyPPI3TfW"}
+0:{"P":null,"c":["","blog","my-development-workflow",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","my-development-workflow","d",[]],{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/388azwm8vmyry.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3zktz-1ygh6sy.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/27akwgpk7chpx.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/3oj3qkt-rkhm1.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable instrument_serif_3e32f36-module__-w2TMq__variable antialiased","children":[["$","noscript",null,{"children":"$2"}],["$","$L3",null,{"id":"gtm","strategy":"afterInteractive","children":"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-KB5L5KQZ');"}],["$","$L3",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-B13KR0C9W4","strategy":"afterInteractive"}],["$","$L3",null,{"id":"ga4","strategy":"afterInteractive","children":"window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-B13KR0C9W4');"}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$La",null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],{},null,false,null]},null,false,"$e"]},null,false,"$e"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$c",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$13",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/388azwm8vmyry.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"OG6quH02b5G-S_Pje1mij"}
 14:I[25979,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/27akwgpk7chpx.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],""]
 e:C
-15:T1f02,<p>AI changed the shape of my work, not the responsibility attached to it. I still
-own the architecture, the trade-offs and whatever ships. What changed is how
-much of the day goes into typing versus thinking — and the tooling below exists
-to shift that ratio as far toward thinking as it will go.</p>
-<h2>Planning comes before prompting</h2>
-<p>The single biggest determinant of output quality isn&#39;t the model. It&#39;s how well
-the problem was specified before the model saw it.</p>
-<p>Ahead of any implementation I write the problem statement, the user stories with
-their acceptance criteria, the UI flow including the empty and error states, and
-an explicit out-of-scope list. Then the tests, against those acceptance criteria,
-before the implementation exists.</p>
-<p>That last one matters more than it sounds. A failing test is an unambiguous
-specification — it either passes or it doesn&#39;t. Given one, a model writes toward
-a target rather than toward something that merely looks plausible. Given a vague
-paragraph instead, it will confidently build the wrong thing and the code will
-compile perfectly while doing so. Most of what gets called &quot;AI slop&quot; is really a
-planning failure that arrived at speed.</p>
+15:T57bd,<p>I&#39;m Yvan Sabay, a full-stack developer based in the Philippines. I&#39;ve spent
+roughly six years building and shipping production web applications — internal
+systems, SaaS platforms and client products — and I work both ends of every
+feature, from the data model and the APIs through to the typed interfaces sitting
+on top of them.</p>
+<p>It started in college, and I fell for it fast. What got me was that building
+something and learning something turned out to be the same activity — you&#39;d set
+out to make a thing work, and by the time it did you understood something you
+hadn&#39;t that morning. Nothing else I&#39;d tried gave me both at once. You finish the
+day with a thing that runs <em>and</em> a head full of stuff you didn&#39;t know at
+breakfast, and the reward for finishing is another problem you don&#39;t know how to
+solve yet.</p>
+<p>Six years in, that hasn&#39;t worn off. The problems got considerably larger and the
+consequences got real, but the loop is the same one I found in college.</p>
+<p>I learned this craft writing every line by hand. These days a significant share
+of the typing is delegated to AI, and I want to be precise about what that did
+and didn&#39;t change. It did not change who owns the architecture, the trade-offs,
+or whatever ends up in production. What it changed is the ratio — how much of the
+day goes into mechanical work versus the decisions that are genuinely hard.</p>
+<p>This post is about the process that ratio depends on. Because the honest version
+of &quot;AI made me faster&quot; is this: it made me faster at building the thing I&#39;d
+already thought through, and considerably faster at building the wrong thing when
+I hadn&#39;t.</p>
+<h2>The stack</h2>
+<p align="center" style="display:flex;gap:1.75rem;align-items:center;justify-content:center;flex-wrap:wrap;margin:2rem 0"><img src="/techstack/typescript.png" alt="TypeScript" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/react.svg" alt="React" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/next-js.webp" alt="Next.js" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/vuejslogo.png" alt="Vue" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/nuxtjs.png" alt="Nuxt" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/laravellogo.png" alt="Laravel" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/firebase.svg" alt="Firebase" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/mysql.svg" alt="MySQL" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/tailwindlogo.png" alt="Tailwind CSS" height="30" style="height:30px;width:auto;margin:0" /><img src="/techstack/docker-logo.webp" alt="Docker" height="34" style="height:34px;width:auto;margin:0" /><img src="/techstack/figmalogo.webp" alt="Figma" height="30" style="height:30px;width:auto;margin:0" /></p><p><strong>TypeScript everywhere it&#39;s allowed.</strong> React and Next.js, Vue and Nuxt, Inertia
+where the app is better served by one codebase than by two. On the backend,
+Laravel most often, with MySQL behind it, and Ruby on Rails where the project
+already lived there.</p>
+<p><strong>Firebase when the product is genuinely realtime.</strong> I&#39;ve used it extensively —
+Firestore and the Realtime Database, Firebase Auth, Cloud Functions, Storage and
+messaging — and the reason isn&#39;t that it&#39;s less work. It&#39;s that presence, live
+sync and push are the kind of thing you either get for free or spend a month
+building badly. The trade is that your data model and your security rules become
+the same conversation: with no server tier between the client and the database,
+the rules <em>are</em> the authorisation layer, and anything a rule can&#39;t express has to
+move into a function. Knowing which half a given feature belongs in is most of
+what using Firebase well actually is.</p>
+<p>Around that: Docker for local parity, GitHub Actions for CI/CD, Sentry for the
+errors that only exist in production, Cypress and Jest for coverage, Figma for
+prototypes that go in front of people before anything is built.</p>
+<p>The list is long because six years of shipping means inheriting other people&#39;s
+decisions as often as making your own. What I actually care about is narrower:
+typed end to end, a data model chosen deliberately, and boundaries between
+systems that were designed rather than accumulated.</p>
+<h2>Discovery comes before design</h2>
+<p>Most wasted engineering is a correct build of the wrong thing. Not buggy — wrong.
+It works exactly as specified and nobody uses it.</p>
+<p>So before I design a system, I want to know what the business is actually losing
+today, and that only comes from talking to the people living with it.</p>
+<ol>
+<li><strong>Talk to the stakeholder.</strong> Start with how the work happens now — the
+spreadsheet, the workaround, the thing someone does manually every Friday.
+What people ask for is a solution they&#39;ve already guessed at. I want the
+problem underneath it.</li>
+<li><strong>Find the real problem.</strong> The person paying for the software and the person
+using it daily almost never describe the same pain. That gap needs finding
+early, because building for only one of them is how a project gets delivered
+and then quietly abandoned.</li>
+<li><strong>Design the system.</strong> Data model, the flows between screens, where the
+boundaries sit, what talks to what. Decided deliberately and written down, so
+the architecture is a choice rather than whatever the first sprint happened to
+produce.</li>
+<li><strong>Prototype and show it.</strong> Low fidelity through to high, in front of people
+before it&#39;s built. A stakeholder cannot review a paragraph. They will tell you
+precisely what&#39;s wrong with a screen.</li>
+<li><strong>Iterate.</strong> Change it, show it again. Redrawing a screen costs an afternoon.
+Rebuilding a shipped feature costs a sprint and a measure of the client&#39;s
+confidence.</li>
+<li><strong>Agree the scope.</strong> What&#39;s in, what&#39;s explicitly out, what we&#39;re assuming —
+settled before implementation starts, so what ships is what everyone agreed to
+and scope creep becomes a conversation rather than a surprise.</li>
+</ol>
+<p>None of that involves AI, and the order is the argument. The thinking happens
+before the tooling.</p>
+<h2>Planning is the work</h2>
+<p>The single biggest determinant of output quality isn&#39;t the model. It&#39;s how
+precisely the problem was specified before the model saw it.</p>
+<p>I lean on AI heavily — scaffolding, refactors, test suites, migrations, the work
+that used to consume entire days. What I haven&#39;t handed over is the thinking.
+Every artefact below exists before the first prompt, and that is the difference
+between output that ships and output that merely compiles.</p>
+<p><strong>The problem statement.</strong> In plain language: who is stuck, what they&#39;re trying
+to do, what it costs them today, and what success looks like measurably. Hand a
+model a vague problem and it will confidently solve a different one.</p>
+<p><strong>Aggressive planning.</strong> Every unclear requirement gets resolved before it gets
+built. I push the model to surface edge cases and argue design decisions through
+rather than accept the first approach that compiles. An assumption made silently
+at this stage is a rewrite later.</p>
+<p><strong>User stories.</strong> The most important artefact of the set. Stories keep the work
+anchored to a person rather than a spec, and they&#39;re what acceptance criteria
+hang off. Without them, AI optimises for something plausible. With them, it
+optimises for something someone actually needs.</p>
+<p><strong>The UI flow.</strong> Screens and the transitions between them, designed before
+implementation — including the empty, loading and error states everyone forgets.
+A model writes markedly better code against a flow it can see than against a
+paragraph it has to imagine.</p>
+<p><strong>An explicit out-of-scope list.</strong> Naming what we are <em>not</em> building is the
+cheapest way to stop a model generating three features nobody asked for.</p>
+<p><strong>Tests, written first.</strong> Against the acceptance criteria, before the
+implementation exists. This one matters more than it sounds: a failing test is an
+unambiguous specification — it either passes or it doesn&#39;t. Given one, a model
+writes toward a target. Given a vague paragraph, it will build the wrong thing
+and the code will compile perfectly while doing so.</p>
+<p>Most of what gets called &quot;AI slop&quot; is a planning failure that arrived at speed.</p>
 <h2>The tools</h2>
 <ul style="list-style:none;padding-left:0">
-<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg><strong>Claude</strong> — the primary driver. Planning, implementation, refactors and test suites. It does the typing; the architecture decisions and the review stay with me.</li>
-<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M11.503.131 1.891 5.678a.84.84 0 0 0-.42.726v11.188c0 .3.162.575.42.724l9.609 5.55a1 1 0 0 0 .998 0l9.61-5.55a.84.84 0 0 0 .42-.724V6.404a.84.84 0 0 0-.42-.726L12.497.131a1.01 1.01 0 0 0-.996 0M2.657 6.338h18.55c.263 0 .43.287.297.515L12.23 22.918c-.062.107-.229.064-.229-.06V12.335a.59.59 0 0 0-.295-.51l-9.11-5.257c-.109-.063-.064-.23.061-.23"/></svg><strong>Cursor</strong> — when the work is editor-native — inline edits, tab completion, and quick multi-file changes where staying in the buffer beats describing the change.</li>
-<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg><strong>VS Code</strong> — my editor when I'm running Claude. Noticeably lighter than Cursor, and if the AI already lives in the terminal there's no reason to pay for a heavier shell around it.</li>
-<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 3 3 3-3 3V8zm5 5h5v2h-5v-2z"/></svg><strong>Herdr</strong> — an agent-aware terminal multiplexer. tmux-style persistent panes and sessions, but it also surfaces each agent's state — idle, working, blocked, done — in a sidebar, so I can see which one needs me without cycling through panes.</li>
-<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-4 4.9V19h3v2H8v-2h3v-3.1A5 5 0 0 1 7 11h2a3 3 0 0 0 6 0h2z"/></svg><strong>FluidVoice</strong> — dictation, free and fully on-device. Prompts are prose, and I speak prose faster than I type it. Nothing leaves the machine.</li>
-<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M24 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-9 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm0-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6-6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM3 24a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm18 .5a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM6 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm9-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 2.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM3 5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg><strong>Tailscale</strong> — a private mesh network across my devices. My development machine is reachable from anywhere, so a laptop, a tablet or someone else's desk is just another terminal into the same session.</li>
-</ul><h2>How a feature actually moves</h2>
+<li style="margin-bottom:.5rem"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg><strong>Claude</strong> — the primary driver. Planning, implementation, refactors and test suites. It does the typing; the architecture decisions and the review stay with me.</li>
+<li style="margin-bottom:.5rem"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M11.503.131 1.891 5.678a.84.84 0 0 0-.42.726v11.188c0 .3.162.575.42.724l9.609 5.55a1 1 0 0 0 .998 0l9.61-5.55a.84.84 0 0 0 .42-.724V6.404a.84.84 0 0 0-.42-.726L12.497.131a1.01 1.01 0 0 0-.996 0M2.657 6.338h18.55c.263 0 .43.287.297.515L12.23 22.918c-.062.107-.229.064-.229-.06V12.335a.59.59 0 0 0-.295-.51l-9.11-5.257c-.109-.063-.064-.23.061-.23"/></svg><strong>Cursor</strong> — an AI-first code editor. A fork of VS Code with the model built into the buffer rather than bolted on beside it, so completions, inline edits and multi-file changes happen where you're already typing.</li>
+<li style="margin-bottom:.5rem"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg><strong>VS Code</strong> — my editor when I'm running Claude. Noticeably lighter than Cursor, and if the AI already lives in the terminal there's little reason to pay for a heavier shell around it.</li>
+<li style="margin-bottom:.5rem"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 3 3 3-3 3V8zm5 5h5v2h-5v-2z"/></svg><strong>Herdr</strong> — an agent-aware terminal multiplexer. tmux-style persistent panes and sessions, but it also surfaces each agent's state — idle, working, blocked, done — in a sidebar, so I can see which one needs me without cycling through panes.</li>
+<li style="margin-bottom:.5rem"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-4 4.9V19h3v2H8v-2h3v-3.1A5 5 0 0 1 7 11h2a3 3 0 0 0 6 0h2z"/></svg><strong>FluidVoice</strong> — dictation, free and fully on-device. Prompts are prose, and I speak prose faster than I type it. Nothing leaves the machine.</li>
+<li><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:-3px;margin-right:.5rem;opacity:.75"><path d="M24 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-9 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm0-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6-6a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM3 24a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm18 .5a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM6 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm9-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 2.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM3 5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg><strong>Tailscale</strong> — a private mesh network across my devices, so my development machine is reachable from anywhere. A laptop, a tablet or someone else's desk is just another terminal into the same session.</li>
+</ul><h2>From one sentence to a shipped feature</h2>
+<p>The shape of it is simple enough to list:</p>
 <ol>
 <li><strong>Specify.</strong> Problem statement, stories, acceptance criteria, scope boundary.</li>
-<li><strong>Design the flow.</strong> Screens and states, so there&#39;s something concrete to
-build against rather than a description to imagine.</li>
+<li><strong>Design the flow.</strong> Screens and states, so there&#39;s something concrete to build
+against rather than a description to imagine.</li>
+<li><strong>Decide the architecture.</strong> Where this lives, what it touches, what it stores,
+what it does when the thing it depends on is down.</li>
 <li><strong>Write the tests.</strong> Red first, straight from the acceptance criteria.</li>
 <li><strong>Delegate the implementation.</strong> Claude in a Herdr pane, dictated where
 dictating is faster. Cursor when the change is easier to point at than to
 describe.</li>
-<li><strong>Review properly.</strong> Every diff read as though a contractor wrote it, because
-in effect one did. Speed of generation is not a reason to lower the bar for
-what gets merged.</li>
+<li><strong>Review properly.</strong> Every diff read as though a contractor wrote it — because
+in effect one did.</li>
 <li><strong>Ship, then watch it.</strong> Monitoring and error tracking, because the failure
 modes that matter only ever surface in production.</li>
 </ol>
+<p>Written down like that it looks tidy, and it badly undersells where the time
+goes. Steps one through four are most of the work, and the reason why is easiest
+to see with a real request.</p>
+<h3>A worked example</h3>
+<p>Say the ask is: <strong>&quot;let users connect their email account so the app can send on
+their behalf.&quot;</strong></p>
+<p>One sentence. Hand it to a model and you will get code back immediately, and the
+code will look like OAuth. It will have a consent URL, a callback route, a token
+stored somewhere. It will probably even work — once, on your machine, with your
+own Google account, with the consent screen still in testing mode.</p>
+<p>Then it reaches real users and you find out what the sentence didn&#39;t say.</p>
+<p><strong>On experience, none of this is decided yet.</strong> Where does connecting live — in
+settings, or inline the first time someone tries to send? What&#39;s on screen while
+the provider&#39;s popup is open, and what happens if they close it halfway through?
+Can they connect two accounts, and if so which one is the default sender? How do
+they disconnect, and what happens to anything already queued when they do? What
+do we say when Google shows the &quot;this app isn&#39;t verified&quot; screen, because a user
+who sees that with no warning does not continue.</p>
+<p><strong>On correctness, it&#39;s worse.</strong> Which providers — Google, Microsoft, both? They
+differ in scopes, consent behaviour and token lifetime, so &quot;both&quot; is two features
+wearing a trenchcoat. Which scope exactly: the narrow send-only one, or the full
+mailbox read that&#39;s easier to find in the docs and asks the user for far more
+than we need? Where does the refresh token live, encrypted with what, rotated
+how — because that value is a long-lived credential to someone&#39;s inbox and
+belongs nowhere near an ordinary column. What happens when an access token
+expires mid-send: refresh and retry once, or fail? What happens when the user
+revokes access from their Google account settings and we don&#39;t find out until the
+next send returns a 400 — do we mark the connection dead, and how do we tell
+them, given the channel we&#39;d normally use is the one that just broke? What about
+provider rate limits, bounces, threading, <code>From</code> versus <code>Reply-To</code>? Is the
+callback checking a <code>state</code> parameter, is the redirect URI allowlisted, and is
+there any path where a token ends up in a log line or an error report?</p>
+<p><strong>And on verification:</strong> how is any of this tested without calling Google in CI,
+and are the failure paths covered or only the happy one?</p>
+<p>None of that is exotic. Every item there is something a real user hits in the
+first month, and not one of them is in the original sentence. A model won&#39;t ask
+about any of it either. It will pick an answer — silently, plausibly, usually the
+most common one on the internet — and hand you a diff that compiles.</p>
+<h3>What I actually hand over</h3>
+<p>For that feature, before any implementation:</p>
+<ul>
+<li>The provider decision and the reason for it, with the second provider named as
+out of scope for v1 rather than left ambiguous.</li>
+<li>The exact scopes, chosen to be the narrowest that does the job.</li>
+<li>The token storage design — what&#39;s stored, how it&#39;s encrypted, how it rotates,
+and who can read it.</li>
+<li>A connection state machine — <code>disconnected → pending → active → needs_reauth → revoked</code> — and what the interface shows in each of those states.</li>
+<li>The send path: one refresh attempt, then a specific failure, with the retry and
+backoff behaviour written down rather than improvised.</li>
+<li>The actual copy for every error state, including the unverified-app screen.</li>
+<li>An out-of-scope list: no shared mailboxes, no scheduling, no second provider.</li>
+<li>Tests against those states, written first.</li>
+</ul>
+<p>That&#39;s perhaps ninety minutes of thinking, and it is most of the feature. What
+follows it — the provider client, the migration, the callback handler, the test
+doubles, the retry wrapper, the settings UI — is work AI does quickly and does
+well, precisely because every decision it would otherwise have guessed at has
+already been made.</p>
+<h3>The part that doesn&#39;t delegate</h3>
+<p>The useful way to think about the model is as an exceptionally fast implementer
+who has never met your users, hasn&#39;t read your privacy policy, doesn&#39;t know which
+compliance regime you&#39;re under, and will never push back on a bad decision because
+it has no way of telling that it&#39;s bad. Give it a decided problem and it is
+genuinely excellent. Give it an undecided one and it will decide for you, and you
+won&#39;t notice, because the output looks the same either way.</p>
+<p>It is, however, a very good adversary. &quot;Here&#39;s my design for OAuth token storage
+— tell me how it fails&quot; gets a sharper list than most code reviews. So does asking
+it to enumerate the edge cases in a flow, or to argue the case for an approach I
+didn&#39;t choose. That&#39;s a different job from asking it to build, and it&#39;s the one I
+lean on hardest during planning.</p>
+<p>What stays mine is knowing which of those fifty questions actually matter for
+<em>this</em> product, and which we&#39;re consciously choosing to skip. Skipping something
+deliberately is a decision. Not knowing it existed is an accident, and the two are
+indistinguishable in the diff.</p>
+<p>Which is why the review step is the one I&#39;d defend hardest. Generated code has a
+particular failure mode: it is fluent. It reads well, it follows the conventions
+of the file it&#39;s in, and it can be subtly wrong in a way that hand-written code,
+with its hesitations and its awkward bits, usually isn&#39;t. Reviewing it demands
+<em>more</em> attention than reviewing a colleague&#39;s work, not less — and the moment a
+diff is merged, the fact that a model wrote it stops being relevant to anybody.
+It&#39;s my name on the commit and my problem at two in the morning.</p>
 <h2>What this is actually for</h2>
 <p>None of this is about writing less code. It&#39;s about spending a larger share of
 the day on the decisions that are genuinely hard — the data model, the boundary
 between systems, what happens when the third-party API times out — and a smaller
-share on the mechanical work that surrounds them.</p>
+share on the mechanical work surrounding them.</p>
+<p>The tools will keep changing; most of what&#39;s on this page will look dated inside
+two years. The parts that won&#39;t are the ones that were never really about tooling:
+understanding the problem before designing the system, showing people something
+they can react to before it&#39;s expensive to change, naming what you&#39;re not
+building, and holding the same bar at review no matter what produced the diff.</p>
 <p>The engineering judgement is still mine. The typing no longer has to be.</p>
-a:["$","main",null,{"className":"shell py-16 md:py-24","children":["$","div",null,{"className":"mx-auto max-w-[82ch]","children":[["$","$L14",null,{"href":"/blog","className":"font-mono text-eyebrow uppercase text-muted transition-colors hover:text-accent","children":"← All posts"}],["$","article",null,{"className":"mt-12","children":[["$","header",null,{"className":"border-b border-line pb-10","children":[["$","h1",null,{"className":"font-display text-h2","children":"My Development Workflow"}],["$","p",null,{"className":"mt-6 max-w-[60ch] text-body text-muted","children":"The tools and the process behind AI-driven development — planning first, agents in the terminal, and a machine I can reach from anywhere."}],["$","p",null,{"className":"mt-8 font-mono text-eyebrow uppercase text-muted","children":["August 6, 2026"," — ",5," min read"," — workflow · ai · tooling"]}]]}],["$","div",null,{"className":"prose prose-invert mt-12 max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-accent prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:border-line prose-pre:bg-surface","dangerouslySetInnerHTML":{"__html":"$15"}}]]}]]}]}]
+<p>If you&#39;re building something and any of this sounds like the way you&#39;d want it
+approached, <a href="/#contact">my inbox is open</a>.</p>
+a:["$","main",null,{"className":"shell py-16 md:py-24","children":["$","div",null,{"className":"mx-auto max-w-[82ch]","children":[["$","$L14",null,{"href":"/blog","className":"font-mono text-eyebrow uppercase text-muted transition-colors hover:text-accent","children":"← All posts"}],["$","article",null,{"className":"mt-12","children":[["$","header",null,{"className":"border-b border-line pb-10","children":[["$","h1",null,{"className":"font-display text-h2","children":"How I Build Software"}],["$","p",null,{"className":"mt-6 max-w-[60ch] text-body text-muted","children":"Six years of full-stack work, the stack I reach for, and the process behind it — discovery before design, planning before prompting, and why the review bar doesn't move just because a machine wrote the diff."}],["$","p",null,{"className":"mt-8 font-mono text-eyebrow uppercase text-muted","children":["August 6, 2026"," — ",16," min read"," — workflow · process · ai · engineering"]}]]}],["$","div",null,{"className":"prose prose-invert mt-12 max-w-none prose-headings:font-display prose-headings:tracking-tight prose-a:text-accent prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:border-line prose-pre:bg-surface","dangerouslySetInnerHTML":{"__html":"$15"}}]]}]]}]}]
 10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 16:I[82886,["/_next/static/chunks/3zktz-1ygh6sy.js","/_next/static/chunks/27akwgpk7chpx.js","/_next/static/chunks/3oj3qkt-rkhm1.js"],"IconMark"]
 d:null
-12:[["$","title","0",{"children":"My Development Workflow — Yvan Sabay"}],["$","meta","1",{"name":"description","content":"The tools and the process behind AI-driven development — planning first, agents in the terminal, and a machine I can reach from anywhere."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L16","3",{}]]
+12:[["$","title","0",{"children":"How I Build Software — Yvan Sabay"}],["$","meta","1",{"name":"description","content":"Six years of full-stack work, the stack I reach for, and the process behind it — discovery before design, planning before prompting, and why the review bar doesn't move just because a machine wrote the diff."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L16","3",{}]]
